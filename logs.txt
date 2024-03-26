@@ -1,0 +1,1324 @@
+* 
+* ==> Audit <==
+* |---------|---------------------|----------|--------------|---------|---------------------|---------------------|
+| Command |        Args         | Profile  |     User     | Version |     Start Time      |      End Time       |
+|---------|---------------------|----------|--------------|---------|---------------------|---------------------|
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 15 Mar 24 18:23 -03 | 15 Mar 24 18:24 -03 |
+| stop    |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 11:44 -03 | 18 Mar 24 11:44 -03 |
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 11:44 -03 | 18 Mar 24 11:44 -03 |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:34 -03 | 18 Mar 24 12:35 -03 |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:35 -03 | 18 Mar 24 12:36 -03 |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:37 -03 | 18 Mar 24 12:40 -03 |
+| stop    |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:40 -03 | 18 Mar 24 12:40 -03 |
+| start   | --driver=parallels  | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:40 -03 |                     |
+| start   | --driver=parallels  | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:40 -03 |                     |
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:41 -03 | 18 Mar 24 12:41 -03 |
+| start   | --driver=parallels  | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:41 -03 |                     |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:41 -03 | 18 Mar 24 12:42 -03 |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:43 -03 | 18 Mar 24 12:44 -03 |
+| stop    |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:46 -03 | 18 Mar 24 12:46 -03 |
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:46 -03 | 18 Mar 24 12:47 -03 |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:47 -03 | 18 Mar 24 12:47 -03 |
+| stop    |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:51 -03 |                     |
+| stop    |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:51 -03 | 18 Mar 24 12:52 -03 |
+| stop    |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:52 -03 | 18 Mar 24 12:52 -03 |
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:52 -03 | 18 Mar 24 12:53 -03 |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:53 -03 | 18 Mar 24 12:57 -03 |
+| stop    |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 12:57 -03 | 18 Mar 24 12:57 -03 |
+| delete  |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:00 -03 | 18 Mar 24 13:00 -03 |
+| start   | --driver=virtualbox | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:01 -03 |                     |
+| stop    |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:02 -03 | 18 Mar 24 13:02 -03 |
+| delete  |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:02 -03 | 18 Mar 24 13:02 -03 |
+| start   | --driver=parallels  | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:02 -03 |                     |
+| start   | --driver=parallels  | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:02 -03 |                     |
+| delete  |                     | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:10 -03 | 18 Mar 24 13:10 -03 |
+| start   | --driver=hyperkit   | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:11 -03 | 18 Mar 24 13:12 -03 |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 13:32 -03 | 18 Mar 24 13:32 -03 |
+| service | msvc-cursos --url   | minikube | rodrigolopez | v1.32.0 | 18 Mar 24 15:27 -03 | 18 Mar 24 15:27 -03 |
+| service | msvc-gateway --url  | minikube | rodrigolopez | v1.32.0 | 19 Mar 24 17:23 -03 | 19 Mar 24 17:23 -03 |
+| service | msvc-gateway --url  | minikube | rodrigolopez | v1.32.0 | 19 Mar 24 17:39 -03 | 19 Mar 24 17:39 -03 |
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 21 Mar 24 19:18 -03 | 21 Mar 24 19:19 -03 |
+| service | msvc-auth --url     | minikube | rodrigolopez | v1.32.0 | 21 Mar 24 19:20 -03 |                     |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 21 Mar 24 19:20 -03 | 21 Mar 24 19:20 -03 |
+| service | msvc-auth --url     | minikube | rodrigolopez | v1.32.0 | 21 Mar 24 19:57 -03 | 21 Mar 24 19:58 -03 |
+| service | msvc-usuarios --url | minikube | rodrigolopez | v1.32.0 | 21 Mar 24 19:59 -03 | 21 Mar 24 19:59 -03 |
+| service | msvc-auth --url     | minikube | rodrigolopez | v1.32.0 | 21 Mar 24 20:52 -03 | 21 Mar 24 20:52 -03 |
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 25 Mar 24 15:16 -03 |                     |
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 25 Mar 24 15:34 -03 |                     |
+| start   |                     | minikube | root         | v1.32.0 | 25 Mar 24 15:35 -03 |                     |
+| start   |                     | minikube | rodrigolopez | v1.32.0 | 25 Mar 24 15:36 -03 |                     |
+|---------|---------------------|----------|--------------|---------|---------------------|---------------------|
+
+* 
+* ==> Last Start <==
+* Log file created at: 2024/03/25 15:36:45
+Running on machine: MacBook-Pro-de-MacBook
+Binary: Built with gc go1.21.3 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 15:36:45.089960    1361 out.go:296] Setting OutFile to fd 1 ...
+I0325 15:36:45.090335    1361 out.go:348] isatty.IsTerminal(1) = true
+I0325 15:36:45.090339    1361 out.go:309] Setting ErrFile to fd 2...
+I0325 15:36:45.090345    1361 out.go:348] isatty.IsTerminal(2) = true
+I0325 15:36:45.090671    1361 root.go:338] Updating PATH: /Users/rodrigolopez/.minikube/bin
+I0325 15:36:45.094724    1361 out.go:303] Setting JSON to false
+I0325 15:36:45.140958    1361 start.go:128] hostinfo: {"hostname":"MacBook-Pro-de-MacBook.local","uptime":281,"bootTime":1711391524,"procs":616,"os":"darwin","platform":"darwin","platformFamily":"Standalone Workstation","platformVersion":"14.4","kernelVersion":"23.4.0","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"16b72540-80df-547b-a3b1-432e394646c9"}
+W0325 15:36:45.141093    1361 start.go:136] gopshost.Virtualization returned error: not implemented yet
+I0325 15:36:45.163048    1361 out.go:177] 😄  minikube v1.32.0 en Darwin 14.4
+I0325 15:36:45.204143    1361 notify.go:220] Checking for updates...
+I0325 15:36:45.204880    1361 config.go:182] Loaded profile config "minikube": Driver=hyperkit, ContainerRuntime=docker, KubernetesVersion=v1.28.3
+I0325 15:36:45.204994    1361 driver.go:378] Setting default libvirt URI to qemu:///system
+I0325 15:36:45.205971    1361 main.go:141] libmachine: Found binary path at /Users/rodrigolopez/.minikube/bin/docker-machine-driver-hyperkit
+I0325 15:36:45.206416    1361 main.go:141] libmachine: Launching plugin server for driver hyperkit
+I0325 15:36:45.256951    1361 main.go:141] libmachine: Plugin server listening at address 127.0.0.1:49988
+I0325 15:36:45.260980    1361 main.go:141] libmachine: () Calling .GetVersion
+I0325 15:36:45.264780    1361 main.go:141] libmachine: Using API Version  1
+I0325 15:36:45.264794    1361 main.go:141] libmachine: () Calling .SetConfigRaw
+I0325 15:36:45.265531    1361 main.go:141] libmachine: () Calling .GetMachineName
+I0325 15:36:45.265681    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:45.296023    1361 out.go:177] ✨  Using the hyperkit driver based on existing profile
+I0325 15:36:45.337950    1361 start.go:298] selected driver: hyperkit
+I0325 15:36:45.337963    1361 start.go:902] validating driver "hyperkit" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.32.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:4000 CPUs:2 DiskSize:20000 VMDriver: Driver:hyperkit HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:10.211.55.2 Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/Users:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I0325 15:36:45.338101    1361 start.go:913] status for hyperkit: {Installed:true Healthy:true Running:true NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0325 15:36:45.338964    1361 install.go:52] acquiring lock: {Name:mk4023283b30b374c3f04c8805d539e68824c0b8 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0325 15:36:45.339662    1361 install.go:117] Validating docker-machine-driver-hyperkit, PATH=/Users/rodrigolopez/.minikube/bin:/Users/rodrigolopez/.sdkman/candidates/java/current/bin:/usr/local/opt/mysql-client/bin:/usr/local/opt/mysql-client/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+I0325 15:36:45.353324    1361 install.go:137] /Users/rodrigolopez/.minikube/bin/docker-machine-driver-hyperkit version is 1.32.0
+I0325 15:36:45.362552    1361 install.go:79] stdout: /Users/rodrigolopez/.minikube/bin/docker-machine-driver-hyperkit
+I0325 15:36:45.362579    1361 install.go:81] /Users/rodrigolopez/.minikube/bin/docker-machine-driver-hyperkit looks good
+I0325 15:36:45.371216    1361 cni.go:84] Creating CNI manager for ""
+I0325 15:36:45.371256    1361 cni.go:158] "hyperkit" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0325 15:36:45.371524    1361 start_flags.go:323] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.32.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:4000 CPUs:2 DiskSize:20000 VMDriver: Driver:hyperkit HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:10.211.55.2 Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/Users:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I0325 15:36:45.372890    1361 iso.go:125] acquiring lock: {Name:mk778ad04d16c1b7bb9f54d0cdb3747004bb487d Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0325 15:36:45.395029    1361 out.go:177] 👍  Starting control plane node minikube in cluster minikube
+I0325 15:36:45.438106    1361 preload.go:132] Checking if preload exists for k8s version v1.28.3 and runtime docker
+I0325 15:36:45.438176    1361 preload.go:148] Found local preload: /Users/rodrigolopez/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4
+I0325 15:36:45.438499    1361 cache.go:56] Caching tarball of preloaded images
+I0325 15:36:45.439242    1361 preload.go:174] Found /Users/rodrigolopez/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0325 15:36:45.439257    1361 cache.go:59] Finished verifying existence of preloaded tar for  v1.28.3 on docker
+I0325 15:36:45.439378    1361 profile.go:148] Saving config to /Users/rodrigolopez/.minikube/profiles/minikube/config.json ...
+I0325 15:36:45.440710    1361 start.go:365] acquiring machines lock for minikube: {Name:mk4358fe50edf147c020d6cb9370f02a50ab744a Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0325 15:36:45.440807    1361 start.go:369] acquired machines lock for "minikube" in 81.404µs
+I0325 15:36:45.440829    1361 start.go:96] Skipping create...Using existing machine configuration
+I0325 15:36:45.441575    1361 fix.go:54] fixHost starting: 
+I0325 15:36:45.441898    1361 main.go:141] libmachine: Found binary path at /Users/rodrigolopez/.minikube/bin/docker-machine-driver-hyperkit
+I0325 15:36:45.441927    1361 main.go:141] libmachine: Launching plugin server for driver hyperkit
+I0325 15:36:45.454198    1361 main.go:141] libmachine: Plugin server listening at address 127.0.0.1:49990
+I0325 15:36:45.454731    1361 main.go:141] libmachine: () Calling .GetVersion
+I0325 15:36:45.455262    1361 main.go:141] libmachine: Using API Version  1
+I0325 15:36:45.455273    1361 main.go:141] libmachine: () Calling .SetConfigRaw
+I0325 15:36:45.455663    1361 main.go:141] libmachine: () Calling .GetMachineName
+I0325 15:36:45.455895    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:45.456061    1361 main.go:141] libmachine: (minikube) Calling .GetState
+I0325 15:36:45.456220    1361 main.go:141] libmachine: (minikube) DBG | exe=/Users/rodrigolopez/.minikube/bin/docker-machine-driver-hyperkit uid=0
+I0325 15:36:45.456657    1361 main.go:141] libmachine: (minikube) DBG | hyperkit pid from json: 1190
+I0325 15:36:45.458895    1361 fix.go:102] recreateIfNeeded on minikube: state=Running err=<nil>
+W0325 15:36:45.458916    1361 fix.go:128] unexpected machine state, will restart: <nil>
+I0325 15:36:45.481058    1361 out.go:177] 🏃  Updating the running hyperkit "minikube" VM ...
+I0325 15:36:45.502811    1361 machine.go:88] provisioning docker machine ...
+I0325 15:36:45.502896    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:45.503315    1361 main.go:141] libmachine: (minikube) Calling .GetMachineName
+I0325 15:36:45.504409    1361 buildroot.go:166] provisioning hostname "minikube"
+I0325 15:36:45.504431    1361 main.go:141] libmachine: (minikube) Calling .GetMachineName
+I0325 15:36:45.505299    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:45.505553    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:45.505749    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:45.505940    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:45.506120    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:45.506687    1361 main.go:141] libmachine: Using SSH client type: native
+I0325 15:36:45.509695    1361 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x1405ca0] 0x1408980 <nil>  [] 0s} 10.211.55.2 22 <nil> <nil>}
+I0325 15:36:45.509707    1361 main.go:141] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0325 15:36:45.627101    1361 main.go:141] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0325 15:36:45.627429    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:45.627652    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:45.627793    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:45.627945    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:45.628074    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:45.628320    1361 main.go:141] libmachine: Using SSH client type: native
+I0325 15:36:45.628688    1361 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x1405ca0] 0x1408980 <nil>  [] 0s} 10.211.55.2 22 <nil> <nil>}
+I0325 15:36:45.628701    1361 main.go:141] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0325 15:36:45.724548    1361 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0325 15:36:45.724744    1361 buildroot.go:172] set auth options {CertDir:/Users/rodrigolopez/.minikube CaCertPath:/Users/rodrigolopez/.minikube/certs/ca.pem CaPrivateKeyPath:/Users/rodrigolopez/.minikube/certs/ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:/Users/rodrigolopez/.minikube/machines/server.pem ServerKeyPath:/Users/rodrigolopez/.minikube/machines/server-key.pem ClientKeyPath:/Users/rodrigolopez/.minikube/certs/key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:/Users/rodrigolopez/.minikube/certs/cert.pem ServerCertSANs:[] StorePath:/Users/rodrigolopez/.minikube}
+I0325 15:36:45.724771    1361 buildroot.go:174] setting up certificates
+I0325 15:36:45.725095    1361 provision.go:83] configureAuth start
+I0325 15:36:45.725108    1361 main.go:141] libmachine: (minikube) Calling .GetMachineName
+I0325 15:36:45.725311    1361 main.go:141] libmachine: (minikube) Calling .GetIP
+I0325 15:36:45.725486    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:45.725663    1361 provision.go:138] copyHostCerts
+I0325 15:36:45.726330    1361 exec_runner.go:144] found /Users/rodrigolopez/.minikube/key.pem, removing ...
+I0325 15:36:45.726343    1361 exec_runner.go:203] rm: /Users/rodrigolopez/.minikube/key.pem
+I0325 15:36:45.726546    1361 exec_runner.go:151] cp: /Users/rodrigolopez/.minikube/certs/key.pem --> /Users/rodrigolopez/.minikube/key.pem (1679 bytes)
+I0325 15:36:45.727336    1361 exec_runner.go:144] found /Users/rodrigolopez/.minikube/ca.pem, removing ...
+I0325 15:36:45.727342    1361 exec_runner.go:203] rm: /Users/rodrigolopez/.minikube/ca.pem
+I0325 15:36:45.727495    1361 exec_runner.go:151] cp: /Users/rodrigolopez/.minikube/certs/ca.pem --> /Users/rodrigolopez/.minikube/ca.pem (1094 bytes)
+I0325 15:36:45.728009    1361 exec_runner.go:144] found /Users/rodrigolopez/.minikube/cert.pem, removing ...
+I0325 15:36:45.728014    1361 exec_runner.go:203] rm: /Users/rodrigolopez/.minikube/cert.pem
+I0325 15:36:45.728129    1361 exec_runner.go:151] cp: /Users/rodrigolopez/.minikube/certs/cert.pem --> /Users/rodrigolopez/.minikube/cert.pem (1135 bytes)
+I0325 15:36:45.728506    1361 provision.go:112] generating server cert: /Users/rodrigolopez/.minikube/machines/server.pem ca-key=/Users/rodrigolopez/.minikube/certs/ca.pem private-key=/Users/rodrigolopez/.minikube/certs/ca-key.pem org=rodrigolopez.minikube san=[10.211.55.2 10.211.55.2 localhost 127.0.0.1 minikube minikube]
+I0325 15:36:45.888543    1361 provision.go:172] copyRemoteCerts
+I0325 15:36:45.888990    1361 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0325 15:36:45.889010    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:45.889218    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:45.889362    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:45.889490    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:45.889627    1361 sshutil.go:53] new ssh client: &{IP:10.211.55.2 Port:22 SSHKeyPath:/Users/rodrigolopez/.minikube/machines/minikube/id_rsa Username:docker}
+I0325 15:36:45.949901    1361 ssh_runner.go:362] scp /Users/rodrigolopez/.minikube/machines/server.pem --> /etc/docker/server.pem (1216 bytes)
+I0325 15:36:45.985345    1361 ssh_runner.go:362] scp /Users/rodrigolopez/.minikube/machines/server-key.pem --> /etc/docker/server-key.pem (1675 bytes)
+I0325 15:36:46.020624    1361 ssh_runner.go:362] scp /Users/rodrigolopez/.minikube/certs/ca.pem --> /etc/docker/ca.pem (1094 bytes)
+I0325 15:36:46.056451    1361 provision.go:86] duration metric: configureAuth took 331.317579ms
+I0325 15:36:46.056468    1361 buildroot.go:189] setting minikube options for container-runtime
+I0325 15:36:46.056658    1361 config.go:182] Loaded profile config "minikube": Driver=hyperkit, ContainerRuntime=docker, KubernetesVersion=v1.28.3
+I0325 15:36:46.056677    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:46.056874    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:46.057015    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:46.057191    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.057318    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.057454    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:46.057677    1361 main.go:141] libmachine: Using SSH client type: native
+I0325 15:36:46.058038    1361 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x1405ca0] 0x1408980 <nil>  [] 0s} 10.211.55.2 22 <nil> <nil>}
+I0325 15:36:46.058045    1361 main.go:141] libmachine: About to run SSH command:
+df --output=fstype / | tail -n 1
+I0325 15:36:46.155170    1361 main.go:141] libmachine: SSH cmd err, output: <nil>: tmpfs
+
+I0325 15:36:46.155178    1361 buildroot.go:70] root file system type: tmpfs
+I0325 15:36:46.155283    1361 provision.go:309] Updating docker unit: /lib/systemd/system/docker.service ...
+I0325 15:36:46.155296    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:46.155467    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:46.155592    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.155725    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.155882    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:46.156115    1361 main.go:141] libmachine: Using SSH client type: native
+I0325 15:36:46.156447    1361 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x1405ca0] 0x1408980 <nil>  [] 0s} 10.211.55.2 22 <nil> <nil>}
+I0325 15:36:46.156517    1361 main.go:141] libmachine: About to run SSH command:
+sudo mkdir -p /lib/systemd/system && printf %!s(MISSING) "[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=hyperkit --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP \$MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+" | sudo tee /lib/systemd/system/docker.service.new
+I0325 15:36:46.271258    1361 main.go:141] libmachine: SSH cmd err, output: <nil>: [Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=hyperkit --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP $MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+I0325 15:36:46.271556    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:46.271738    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:46.271869    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.272016    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.272134    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:46.272364    1361 main.go:141] libmachine: Using SSH client type: native
+I0325 15:36:46.272707    1361 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x1405ca0] 0x1408980 <nil>  [] 0s} 10.211.55.2 22 <nil> <nil>}
+I0325 15:36:46.272721    1361 main.go:141] libmachine: About to run SSH command:
+sudo diff -u /lib/systemd/system/docker.service /lib/systemd/system/docker.service.new || { sudo mv /lib/systemd/system/docker.service.new /lib/systemd/system/docker.service; sudo systemctl -f daemon-reload && sudo systemctl -f enable docker && sudo systemctl -f restart docker; }
+I0325 15:36:46.375729    1361 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0325 15:36:46.375739    1361 machine.go:91] provisioned docker machine in 872.893818ms
+I0325 15:36:46.375745    1361 start.go:300] post-start starting for "minikube" (driver="hyperkit")
+I0325 15:36:46.375758    1361 start.go:329] creating required directories: [/etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs]
+I0325 15:36:46.375769    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:46.376069    1361 ssh_runner.go:195] Run: sudo mkdir -p /etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs
+I0325 15:36:46.376088    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:46.376228    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:46.376368    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.376490    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:46.376625    1361 sshutil.go:53] new ssh client: &{IP:10.211.55.2 Port:22 SSHKeyPath:/Users/rodrigolopez/.minikube/machines/minikube/id_rsa Username:docker}
+I0325 15:36:46.435653    1361 ssh_runner.go:195] Run: cat /etc/os-release
+I0325 15:36:46.441312    1361 info.go:137] Remote host: Buildroot 2021.02.12
+I0325 15:36:46.441333    1361 filesync.go:126] Scanning /Users/rodrigolopez/.minikube/addons for local assets ...
+I0325 15:36:46.441509    1361 filesync.go:126] Scanning /Users/rodrigolopez/.minikube/files for local assets ...
+I0325 15:36:46.441589    1361 start.go:303] post-start completed in 65.83667ms
+I0325 15:36:46.441600    1361 fix.go:56] fixHost completed within 1.000516998s
+I0325 15:36:46.441920    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:46.442101    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:46.442224    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.442389    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.442527    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:46.442762    1361 main.go:141] libmachine: Using SSH client type: native
+I0325 15:36:46.443089    1361 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x1405ca0] 0x1408980 <nil>  [] 0s} 10.211.55.2 22 <nil> <nil>}
+I0325 15:36:46.443095    1361 main.go:141] libmachine: About to run SSH command:
+date +%!s(MISSING).%!N(MISSING)
+I0325 15:36:46.538984    1361 main.go:141] libmachine: SSH cmd err, output: <nil>: 1711391806.675042309
+
+I0325 15:36:46.539019    1361 fix.go:206] guest clock: 1711391806.675042309
+I0325 15:36:46.539031    1361 fix.go:219] Guest: 2024-03-25 15:36:46.675042309 -0300 -03 Remote: 2024-03-25 15:36:46.441604 -0300 -03 m=+1.427737563 (delta=233.438309ms)
+I0325 15:36:46.539621    1361 fix.go:190] guest clock delta is within tolerance: 233.438309ms
+I0325 15:36:46.539630    1361 start.go:83] releasing machines lock for "minikube", held for 1.098788861s
+I0325 15:36:46.539653    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:46.539852    1361 main.go:141] libmachine: (minikube) Calling .GetIP
+I0325 15:36:46.540009    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:46.540523    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:46.540689    1361 main.go:141] libmachine: (minikube) Calling .DriverName
+I0325 15:36:46.540968    1361 ssh_runner.go:195] Run: cat /version.json
+I0325 15:36:46.540981    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:46.541125    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:46.541264    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.541423    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:46.541575    1361 sshutil.go:53] new ssh client: &{IP:10.211.55.2 Port:22 SSHKeyPath:/Users/rodrigolopez/.minikube/machines/minikube/id_rsa Username:docker}
+I0325 15:36:46.542156    1361 ssh_runner.go:195] Run: curl -sS -m 2 https://registry.k8s.io/
+I0325 15:36:46.543490    1361 main.go:141] libmachine: (minikube) Calling .GetSSHHostname
+I0325 15:36:46.543676    1361 main.go:141] libmachine: (minikube) Calling .GetSSHPort
+I0325 15:36:46.543817    1361 main.go:141] libmachine: (minikube) Calling .GetSSHKeyPath
+I0325 15:36:46.543961    1361 main.go:141] libmachine: (minikube) Calling .GetSSHUsername
+I0325 15:36:46.544086    1361 sshutil.go:53] new ssh client: &{IP:10.211.55.2 Port:22 SSHKeyPath:/Users/rodrigolopez/.minikube/machines/minikube/id_rsa Username:docker}
+I0325 15:36:46.594474    1361 ssh_runner.go:195] Run: systemctl --version
+I0325 15:36:46.657913    1361 ssh_runner.go:195] Run: sh -c "stat /etc/cni/net.d/*loopback.conf*"
+W0325 15:36:46.665844    1361 cni.go:209] loopback cni configuration skipped: "/etc/cni/net.d/*loopback.conf*" not found
+I0325 15:36:46.665983    1361 ssh_runner.go:195] Run: sudo find /etc/cni/net.d -maxdepth 1 -type f ( ( -name *bridge* -or -name *podman* ) -and -not -name *.mk_disabled ) -printf "%!p(MISSING), " -exec sh -c "sudo mv {} {}.mk_disabled" ;
+I0325 15:36:46.678738    1361 cni.go:259] no active bridge cni configs found in "/etc/cni/net.d" - nothing to disable
+I0325 15:36:46.678756    1361 start.go:472] detecting cgroup driver to use...
+I0325 15:36:46.680759    1361 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///run/containerd/containerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0325 15:36:46.706997    1361 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)sandbox_image = .*$|\1sandbox_image = "registry.k8s.io/pause:3.9"|' /etc/containerd/config.toml"
+I0325 15:36:46.721567    1361 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)restrict_oom_score_adj = .*$|\1restrict_oom_score_adj = false|' /etc/containerd/config.toml"
+I0325 15:36:46.737011    1361 containerd.go:145] configuring containerd to use "cgroupfs" as cgroup driver...
+I0325 15:36:46.737135    1361 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)SystemdCgroup = .*$|\1SystemdCgroup = false|g' /etc/containerd/config.toml"
+I0325 15:36:46.751812    1361 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runtime.v1.linux"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0325 15:36:46.766796    1361 ssh_runner.go:195] Run: sh -c "sudo sed -i '/systemd_cgroup/d' /etc/containerd/config.toml"
+I0325 15:36:46.784892    1361 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runc.v1"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0325 15:36:46.799455    1361 ssh_runner.go:195] Run: sh -c "sudo rm -rf /etc/cni/net.mk"
+I0325 15:36:46.814334    1361 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)conf_dir = .*$|\1conf_dir = "/etc/cni/net.d"|g' /etc/containerd/config.toml"
+I0325 15:36:46.829576    1361 ssh_runner.go:195] Run: sudo sysctl net.bridge.bridge-nf-call-iptables
+I0325 15:36:46.842937    1361 ssh_runner.go:195] Run: sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
+I0325 15:36:46.856954    1361 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0325 15:36:47.036801    1361 ssh_runner.go:195] Run: sudo systemctl restart containerd
+I0325 15:36:47.061782    1361 start.go:472] detecting cgroup driver to use...
+I0325 15:36:47.062248    1361 ssh_runner.go:195] Run: sudo systemctl cat docker.service
+I0325 15:36:47.083123    1361 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0325 15:36:47.108703    1361 ssh_runner.go:195] Run: sudo systemctl stop -f containerd
+I0325 15:36:47.132067    1361 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0325 15:36:47.152332    1361 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0325 15:36:47.171619    1361 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///var/run/cri-dockerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0325 15:36:47.197553    1361 ssh_runner.go:195] Run: which cri-dockerd
+I0325 15:36:47.202375    1361 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/cri-docker.service.d
+I0325 15:36:47.215745    1361 ssh_runner.go:362] scp memory --> /etc/systemd/system/cri-docker.service.d/10-cni.conf (189 bytes)
+I0325 15:36:47.239752    1361 ssh_runner.go:195] Run: sudo systemctl unmask docker.service
+I0325 15:36:47.424609    1361 ssh_runner.go:195] Run: sudo systemctl enable docker.socket
+I0325 15:36:47.605776    1361 docker.go:560] configuring docker to use "cgroupfs" as cgroup driver...
+I0325 15:36:47.605867    1361 ssh_runner.go:362] scp memory --> /etc/docker/daemon.json (130 bytes)
+I0325 15:36:47.631504    1361 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0325 15:36:47.807419    1361 ssh_runner.go:195] Run: sudo systemctl restart docker
+I0325 15:36:49.509668    1361 ssh_runner.go:235] Completed: sudo systemctl restart docker: (1.702189741s)
+I0325 15:36:49.509806    1361 ssh_runner.go:195] Run: sudo systemctl enable cri-docker.socket
+I0325 15:36:49.694201    1361 ssh_runner.go:195] Run: sudo systemctl unmask cri-docker.socket
+I0325 15:36:49.880555    1361 ssh_runner.go:195] Run: sudo systemctl enable cri-docker.socket
+I0325 15:36:50.064648    1361 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0325 15:36:50.249363    1361 ssh_runner.go:195] Run: sudo systemctl restart cri-docker.socket
+I0325 15:36:50.291561    1361 out.go:177] 
+W0325 15:36:50.311418    1361 out.go:239] ❌  Saliendo por un error RUNTIME_ENABLE: Failed to enable container runtime: sudo systemctl restart cri-docker.socket: Process exited with status 1
+stdout:
+
+stderr:
+Job failed. See "journalctl -xe" for details.
+
+W0325 15:36:50.311440    1361 out.go:239] 
+W0325 15:36:50.313873    1361 out.go:239] [31m╭───────────────────────────────────────────────────────────────────────────────────────────╮[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    😿  If the above advice does not help, please let us know:                             [31m│[0m
+[31m│[0m    👉  https://github.com/kubernetes/minikube/issues/new/choose                           [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m╰───────────────────────────────────────────────────────────────────────────────────────────╯[0m
+I0325 15:36:50.374626    1361 out.go:177] 
+
+* 
+* ==> Docker <==
+* -- Journal begins at Mon 2024-03-25 18:35:05 UTC, ends at Mon 2024-03-25 18:39:57 UTC. --
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.131523219Z" level=info msg="loading plugin \"io.containerd.runtime.v1.linux\"..." type=io.containerd.runtime.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.131618714Z" level=info msg="loading plugin \"io.containerd.monitor.v1.cgroups\"..." type=io.containerd.monitor.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132149585Z" level=info msg="loading plugin \"io.containerd.service.v1.tasks-service\"..." type=io.containerd.service.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132329984Z" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132463886Z" level=info msg="loading plugin \"io.containerd.transfer.v1.local\"..." type=io.containerd.transfer.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132526617Z" level=info msg="loading plugin \"io.containerd.internal.v1.restart\"..." type=io.containerd.internal.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132616229Z" level=info msg="loading plugin \"io.containerd.grpc.v1.containers\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132728403Z" level=info msg="loading plugin \"io.containerd.grpc.v1.content\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132788822Z" level=info msg="loading plugin \"io.containerd.grpc.v1.diff\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132873370Z" level=info msg="loading plugin \"io.containerd.grpc.v1.events\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.132937703Z" level=info msg="loading plugin \"io.containerd.grpc.v1.healthcheck\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133026343Z" level=info msg="loading plugin \"io.containerd.grpc.v1.images\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133120745Z" level=info msg="loading plugin \"io.containerd.grpc.v1.leases\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133221002Z" level=info msg="loading plugin \"io.containerd.grpc.v1.namespaces\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133426774Z" level=info msg="loading plugin \"io.containerd.internal.v1.opt\"..." type=io.containerd.internal.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133523070Z" level=info msg="loading plugin \"io.containerd.grpc.v1.sandbox-controllers\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133575273Z" level=info msg="loading plugin \"io.containerd.grpc.v1.sandboxes\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133653359Z" level=info msg="loading plugin \"io.containerd.grpc.v1.snapshots\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133715913Z" level=info msg="loading plugin \"io.containerd.grpc.v1.streaming\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133761600Z" level=info msg="loading plugin \"io.containerd.grpc.v1.tasks\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133848301Z" level=info msg="loading plugin \"io.containerd.grpc.v1.transfer\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.133914255Z" level=info msg="loading plugin \"io.containerd.grpc.v1.version\"..." type=io.containerd.grpc.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.134009147Z" level=info msg="loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." type=io.containerd.tracing.processor.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.134069662Z" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="no OpenTelemetry endpoint: skip plugin" type=io.containerd.tracing.processor.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.134161473Z" level=info msg="loading plugin \"io.containerd.internal.v1.tracing\"..." type=io.containerd.internal.v1
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.134290117Z" level=info msg="skipping tracing processor initialization (no tracing plugin)" error="no OpenTelemetry endpoint: skip plugin"
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.134775040Z" level=info msg=serving... address=/var/run/docker/containerd/containerd-debug.sock
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.134915939Z" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock.ttrpc
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.135049146Z" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock
+Mar 25 18:36:49 minikube dockerd[1357]: time="2024-03-25T18:36:49.135150403Z" level=info msg="containerd successfully booted in 0.040435s"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.158573911Z" level=info msg="[graphdriver] trying configured driver: overlay2"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.201338203Z" level=info msg="Loading containers: start."
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.521669105Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.585600005Z" level=info msg="Loading containers: done."
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.610214061Z" level=warning msg="WARNING: No blkio throttle.read_bps_device support"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.610289632Z" level=warning msg="WARNING: No blkio throttle.write_bps_device support"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.610299086Z" level=warning msg="WARNING: No blkio throttle.read_iops_device support"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.610339427Z" level=warning msg="WARNING: No blkio throttle.write_iops_device support"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.610425011Z" level=info msg="Docker daemon" commit=311b9ff graphdriver=overlay2 version=24.0.7
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.610488786Z" level=info msg="Daemon has completed initialization"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.645879099Z" level=info msg="API listen on [::]:2376"
+Mar 25 18:36:49 minikube dockerd[1351]: time="2024-03-25T18:36:49.645970264Z" level=info msg="API listen on /var/run/docker.sock"
+Mar 25 18:36:49 minikube systemd[1]: Started Docker Application Container Engine.
+Mar 25 18:38:47 minikube cri-dockerd[542]: time="2024-03-25T18:38:47Z" level=fatal msg="failed to get docker version: operation timeout: context deadline exceeded"
+Mar 25 18:38:47 minikube systemd[1]: cri-docker.service: Main process exited, code=exited, status=1/FAILURE
+Mar 25 18:38:47 minikube systemd[1]: cri-docker.service: Failed with result 'exit-code'.
+Mar 25 18:38:49 minikube systemd[1]: cri-docker.service: Scheduled restart job, restart counter is at 4.
+Mar 25 18:38:49 minikube systemd[1]: Stopped CRI Interface for Docker Application Container Engine.
+Mar 25 18:38:49 minikube systemd[1]: Starting CRI Interface for Docker Application Container Engine...
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Connecting to docker on the Endpoint unix:///var/run/docker.sock"
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Start docker client with request timeout 0s"
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Hairpin mode is set to hairpin-veth"
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Loaded network plugin cni"
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Docker cri networking managed by network plugin cni"
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Docker Info: &{ID:c398920b-4c1e-483e-8624-fed6c082ec83 Containers:44 ContainersRunning:0 ContainersPaused:0 ContainersStopped:44 Images:33 Driver:overlay2 DriverStatus:[[Backing Filesystem extfs] [Supports d_type true] [Using metacopy false] [Native Overlay Diff true] [userxattr false]] SystemStatus:[] Plugins:{Volume:[local] Network:[bridge host ipvlan macvlan null overlay] Authorization:[] Log:[awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog]} MemoryLimit:true SwapLimit:true KernelMemory:false KernelMemoryTCP:true CPUCfsPeriod:true CPUCfsQuota:true CPUShares:true CPUSet:true PidsLimit:true IPv4Forwarding:true BridgeNfIptables:true BridgeNfIP6tables:true Debug:false NFd:26 OomKillDisable:true NGoroutines:40 SystemTime:2024-03-25T18:38:50.040080783Z LoggingDriver:json-file CgroupDriver:cgroupfs CgroupVersion:1 NEventsListener:0 KernelVersion:5.10.57 OperatingSystem:Buildroot 2021.02.12 OSVersion:2021.02.12 OSType:linux Architecture:x86_64 IndexServerAddress:https://index.docker.io/v1/ RegistryConfig:0xc00033bc70 NCPU:2 MemTotal:4008611840 GenericResources:[] DockerRootDir:/var/lib/docker HTTPProxy: HTTPSProxy: NoProxy: Name:minikube Labels:[provider=hyperkit] ExperimentalBuild:false ServerVersion:24.0.7 ClusterStore: ClusterAdvertise: Runtimes:map[io.containerd.runc.v2:{Path:runc Args:[] Shim:<nil>} runc:{Path:runc Args:[] Shim:<nil>}] DefaultRuntime:runc Swarm:{NodeID: NodeAddr: LocalNodeState:inactive ControlAvailable:false Error: RemoteManagers:[] Nodes:0 Managers:0 Cluster:<nil> Warnings:[]} LiveRestoreEnabled:false Isolation: InitBinary:docker-init ContainerdCommit:{ID:8e4b0bde866788eec76735cc77c4720144248fb7 Expected:8e4b0bde866788eec76735cc77c4720144248fb7} RuncCommit:{ID:ccaecfcbc907d70a7aa870a6650887b901b25b82 Expected:ccaecfcbc907d70a7aa870a6650887b901b25b82} InitCommit:{ID:de40ad0 Expected:de40ad0} SecurityOptions:[name=seccomp,profile=builtin] ProductLicense:Community Engine DefaultAddressPools:[] Warnings:[WARNING: No blkio throttle.read_bps_device support WARNING: No blkio throttle.write_bps_device support WARNING: No blkio throttle.read_iops_device support WARNING: No blkio throttle.write_iops_device support]}"
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Setting cgroupDriver cgroupfs"
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Docker cri received runtime config &RuntimeConfig{NetworkConfig:&NetworkConfig{PodCidr:,},}"
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Starting the GRPC backend for the Docker CRI interface."
+Mar 25 18:38:50 minikube cri-dockerd[1707]: time="2024-03-25T18:38:50Z" level=info msg="Start cri-dockerd grpc backend"
+Mar 25 18:38:50 minikube systemd[1]: Started CRI Interface for Docker Application Container Engine.
+
+* 
+* ==> container status <==
+* CONTAINER           IMAGE                                                                                              CREATED             STATE               NAME                      ATTEMPT             POD ID              POD
+16263b88e267c       6e38f40d628db                                                                                      2 days ago          Exited              storage-provisioner       19                  35ada4c268032       storage-provisioner
+8e4b463ff9a3f       ead0a4a53df89                                                                                      2 days ago          Exited              coredns                   2                   e16a82ae745dd       coredns-5dd5756b68-8t66l
+01f7434d3c37b       5374347291230                                                                                      2 days ago          Exited              kube-apiserver            3                   2583ed6532461       kube-apiserver-minikube
+b65d5834e9a33       5374347291230                                                                                      2 days ago          Exited              kube-apiserver            2                   2583ed6532461       kube-apiserver-minikube
+0d08e11138d76       rodrigolopezkps/usuarios@sha256:f6bafedf56a1e9a241a26bc9592763b438574edcbbe5be23252bd5f55d93b6f3   3 days ago          Exited              usuarios                  85                  ae0775c84a643       msvc-usuarios-57b4699859-nrhss
+ec00aee559cb4       rodrigolopezkps/auth@sha256:92d4bc8f40f0a52fdec479d1a7e8b0bf5065ebdae48759e49f5ec35e8ebf707c       3 days ago          Exited              msvc-auth                 0                   31db02058c5b4       msvc-auth-6f8c7c84f8-bmnrt
+9388cf1fea283       rodrigolopezkps/cursos@sha256:e596668961db3ea0c7a3eb5924d492e12274de8e0e2f7c61ab35fa97dc700db4     3 days ago          Exited              cursos                    1                   e82595e68256a       msvc-cursos-7f57dc7948-cjlm4
+3994d40ee0f68       rodrigolopezkps/gateway@sha256:5effafbbaa7ed63479d40bde5e1450941c9aea33902ec870c7a0e051ae806e04    3 days ago          Exited              msvc-gateway              1                   00bbabd99db00       msvc-gateway-dc9b94b4d-xp522
+a897bf69bf046       postgres@sha256:6b841c8f6a819884207402f1209a8116844365df15fca8cf556fc54a24c70800                   3 days ago          Exited              postgres                  2                   ef08afb97fca3       postgres-7c6b6fc567-jb5nr
+f190351a60703       019814493c7ab                                                                                      3 days ago          Exited              mysql                     1                   1cd81ac43d9e4       mysql8-f7997d846-nlfrj
+e25f5b297a0ca       ead0a4a53df89                                                                                      3 days ago          Exited              coredns                   1                   e16a82ae745dd       coredns-5dd5756b68-8t66l
+adac68ccd970b       bfc896cf80fba                                                                                      3 days ago          Exited              kube-proxy                1                   5232b5742471b       kube-proxy-5pw2w
+d9fbd3d457abd       73deb9a3f7025                                                                                      3 days ago          Exited              etcd                      1                   ccaac2de63cde       etcd-minikube
+c28c8919082c1       6d1b4fd1b182d                                                                                      3 days ago          Exited              kube-scheduler            1                   726378803fbc2       kube-scheduler-minikube
+71d282741f2aa       10baa1ca17068                                                                                      3 days ago          Exited              kube-controller-manager   1                   16f2a92c65b42       kube-controller-manager-minikube
+9fe76352df1c0       rodrigolopezkps/gateway@sha256:5effafbbaa7ed63479d40bde5e1450941c9aea33902ec870c7a0e051ae806e04    5 days ago          Exited              msvc-gateway              0                   f58e815719fe8       msvc-gateway-dc9b94b4d-xp522
+3a601fcbfb9e1       rodrigolopezkps/cursos@sha256:e596668961db3ea0c7a3eb5924d492e12274de8e0e2f7c61ab35fa97dc700db4     6 days ago          Exited              cursos                    0                   1866c4995b0de       msvc-cursos-7f57dc7948-cjlm4
+f8fad0ee02ce5       postgres@sha256:6b841c8f6a819884207402f1209a8116844365df15fca8cf556fc54a24c70800                   6 days ago          Exited              postgres                  1                   d035baaac6e0f       postgres-7c6b6fc567-jb5nr
+36cdf99b90da9       019814493c7ab                                                                                      6 days ago          Exited              mysql                     0                   9e9835401196d       mysql8-f7997d846-nlfrj
+0b7339ef3d4ab       bfc896cf80fba                                                                                      7 days ago          Exited              kube-proxy                0                   d447c94264203       kube-proxy-5pw2w
+a82a0b0cbae62       73deb9a3f7025                                                                                      7 days ago          Exited              etcd                      0                   c520966dac702       etcd-minikube
+eae1e72fd89b6       6d1b4fd1b182d                                                                                      7 days ago          Exited              kube-scheduler            0                   50cb2db923a73       kube-scheduler-minikube
+bced628a00e63       10baa1ca17068                                                                                      7 days ago          Exited              kube-controller-manager   0                   edf730e93af5f       kube-controller-manager-minikube
+
+* 
+* ==> coredns [8e4b463ff9a3] <==
+* [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.32781546s
+[WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.321463937s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.039967657s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 3.189546628s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.181777816s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.128153242s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.416062364s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.494926413s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.550098263s
+[INFO] 10.244.0.76:33857 - 62297 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.072148208s
+[INFO] 10.244.0.76:36046 - 44540 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.005274061s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.615203594s
+[INFO] 10.244.0.76:56679 - 46321 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.037524029s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.015397547s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.090695979s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.347061982s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.553180422s
+[INFO] 10.244.0.76:51615 - 9191 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.007318539s
+[INFO] 10.244.0.76:44135 - 7068 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000185608s
+[INFO] 10.244.0.76:34631 - 57624 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000231984s
+[INFO] 10.244.0.76:50810 - 36807 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.0002006s
+[INFO] 10.244.0.76:36226 - 43522 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000367016s
+[INFO] 10.244.0.76:57363 - 44267 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000259271s
+[INFO] 10.244.0.76:45455 - 32635 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.00025997s
+[INFO] 10.244.0.76:42741 - 1054 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000315143s
+[INFO] 10.244.0.76:43995 - 9509 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000794702s
+[INFO] 10.244.0.76:37647 - 63707 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000401399s
+[INFO] 10.244.0.76:40490 - 19055 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000284158s
+[INFO] 10.244.0.76:50285 - 42080 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000543328s
+[INFO] 10.244.0.76:57948 - 59910 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000855173s
+[INFO] 10.244.0.76:39668 - 24731 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000368016s
+[INFO] 10.244.0.76:55006 - 51408 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000266266s
+[INFO] 10.244.0.76:38642 - 18212 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.00044088s
+[INFO] 10.244.0.76:44695 - 23682 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000227287s
+[INFO] 10.244.0.76:38187 - 17861 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000770514s
+[INFO] 10.244.0.76:50935 - 36273 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000395202s
+[INFO] 10.244.0.76:57091 - 16496 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000326537s
+[INFO] 10.244.0.76:34590 - 36176 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000289155s
+[INFO] 10.244.0.76:35764 - 17099 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000275362s
+[INFO] 10.244.0.76:47670 - 25851 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000521639s
+[INFO] 10.244.0.76:40157 - 64314 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000371814s
+[INFO] 10.244.0.76:60782 - 51213 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000577911s
+[INFO] 10.244.0.76:60220 - 34021 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000343328s
+[INFO] 10.244.0.76:57164 - 39257 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.005662068s
+[INFO] 10.244.0.76:45246 - 22656 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000342028s
+[INFO] 10.244.0.76:52287 - 21658 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000911843s
+[INFO] 10.244.0.76:42290 - 18916 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000267067s
+[INFO] 10.244.0.76:42063 - 49812 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000231185s
+[INFO] 10.244.0.76:59602 - 34703 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000386706s
+[INFO] 10.244.0.76:55028 - 38312 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000473963s
+[INFO] 10.244.0.76:54670 - 3161 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000300249s
+[INFO] 10.244.0.76:36308 - 30162 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000212894s
+[INFO] 10.244.0.76:56662 - 56209 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.00030025s
+[INFO] 10.244.0.76:54858 - 18913 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000353024s
+[INFO] 10.244.0.76:34423 - 40653 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000431884s
+[INFO] 10.244.0.76:55220 - 44120 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000305147s
+[INFO] 10.244.0.76:37346 - 62757 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.001367616s
+[INFO] 10.244.0.76:47646 - 30153 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.003203098s
+[INFO] 10.244.0.76:44531 - 25483 "A IN postgres.default.svc.cluster.local. udp 52 false 512" NOERROR qr,aa,rd 102 0.000764618s
+
+* 
+* ==> coredns [e25f5b297a0c] <==
+* [ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: Failed to watch *v1.Namespace: failed to list *v1.Namespace: Get "https://10.96.0.1:443/api/v1/namespaces?resourceVersion=133151": net/http: TLS handshake timeout
+[WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.070334365s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.237843569s
+[INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout
+[INFO] plugin/kubernetes: Trace[1011199456]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169 (22-Mar-2024 19:40:07.870) (total time: 12667ms):
+Trace[1011199456]: ---"Objects listed" error:Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout 12666ms (19:40:20.288)
+Trace[1011199456]: [12.667991136s] [12.667991136s] END
+[ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.335937997s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.305165191s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.790547428s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.036136573s
+[INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: failed to list *v1.EndpointSlice: Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?resourceVersion=133151": net/http: TLS handshake timeout
+[INFO] plugin/kubernetes: Trace[1529731457]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169 (22-Mar-2024 19:40:16.938) (total time: 11864ms):
+Trace[1529731457]: ---"Objects listed" error:Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?resourceVersion=133151": net/http: TLS handshake timeout 11563ms (19:40:28.501)
+Trace[1529731457]: [11.864092286s] [11.864092286s] END
+[ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: Failed to watch *v1.EndpointSlice: failed to list *v1.EndpointSlice: Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?resourceVersion=133151": net/http: TLS handshake timeout
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.037916482s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.069322072s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.217778206s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.170324445s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.673494834s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.255687642s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.759734992s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.003772363s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.894260346s
+[WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.975006103s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.106472087s
+[INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout
+[INFO] plugin/kubernetes: Trace[1804862]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169 (22-Mar-2024 19:40:47.510) (total time: 19363ms):
+Trace[1804862]: ---"Objects listed" error:Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout 19344ms (19:41:06.855)
+Trace[1804862]: [19.363180567s] [19.363180567s] END
+[ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout
+[INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: failed to list *v1.Namespace: Get "https://10.96.0.1:443/api/v1/namespaces?resourceVersion=133151": net/http: TLS handshake timeout
+[INFO] plugin/kubernetes: Trace[283328271]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169 (22-Mar-2024 19:40:57.177) (total time: 14212ms):
+Trace[283328271]: ---"Objects listed" error:Get "https://10.96.0.1:443/api/v1/namespaces?resourceVersion=133151": net/http: TLS handshake timeout 14189ms (19:41:11.366)
+Trace[283328271]: [14.21253018s] [14.21253018s] END
+[ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: Failed to watch *v1.Namespace: failed to list *v1.Namespace: Get "https://10.96.0.1:443/api/v1/namespaces?resourceVersion=133151": net/http: TLS handshake timeout
+[INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: failed to list *v1.EndpointSlice: Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?resourceVersion=133151": net/http: TLS handshake timeout
+[INFO] plugin/kubernetes: Trace[943477307]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169 (22-Mar-2024 19:41:16.376) (total time: 10476ms):
+Trace[943477307]: ---"Objects listed" error:Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?resourceVersion=133151": net/http: TLS handshake timeout 10442ms (19:41:26.819)
+Trace[943477307]: [10.476426866s] [10.476426866s] END
+[ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: Failed to watch *v1.EndpointSlice: failed to list *v1.EndpointSlice: Get "https://10.96.0.1:443/apis/discovery.k8s.io/v1/endpointslices?resourceVersion=133151": net/http: TLS handshake timeout
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.349241342s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.619207392s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.091900577s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.773440136s
+[INFO] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout
+[INFO] plugin/kubernetes: Trace[915776376]: "Reflector ListAndWatch" name:pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169 (22-Mar-2024 19:41:41.858) (total time: 10622ms):
+Trace[915776376]: ---"Objects listed" error:Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout 10621ms (19:41:52.480)
+Trace[915776376]: [10.622575156s] [10.622575156s] END
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.427311687s
+[ERROR] plugin/kubernetes: pkg/mod/k8s.io/client-go@v0.26.1/tools/cache/reflector.go:169: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?resourceVersion=133151": net/http: TLS handshake timeout
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.223971708s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.184749029s
+[WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.506790727s
+[INFO] SIGTERM: Shutting down servers then terminating
+[INFO] plugin/health: Going into lameduck mode for 5s
+
+* 
+* ==> describe nodes <==
+* 
+* ==> dmesg <==
+* [Mar25 18:34] ERROR: earlyprintk= earlyser already used
+[  +0.000000] You have booted with nomodeset. This means your GPU drivers are DISABLED
+[  +0.000001] Any video related functionality will be severely degraded, and you may not even be able to suspend the system properly
+[  +0.000002] Unless you actually understand what nomodeset does, you should reboot without enabling it
+[  +0.349442] ACPI BIOS Warning (bug): Incorrect checksum in table [DSDT] - 0xBE, should be 0x1B (20200925/tbprint-173)
+[ +20.590851] ACPI Error: Could not enable RealTimeClock event (20200925/evxfevnt-182)
+[  +0.000004] ACPI Warning: Could not enable fixed event - RealTimeClock (4) (20200925/evxface-618)
+[  +0.030455] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[Mar25 18:35] systemd-fstab-generator[125]: Ignoring "noauto" for root device
+[  +0.169241] systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[  +0.000003] systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+[  +3.897832] NFSD: Using /var/lib/nfs/v4recovery as the NFSv4 state recovery directory
+[  +0.000007] NFSD: unable to find recovery directory /var/lib/nfs/v4recovery
+[  +0.000001] NFSD: Unable to initialize client recovery tracking! (-2)
+[  +5.493253] systemd-fstab-generator[523]: Ignoring "noauto" for root device
+[  +0.271960] systemd-fstab-generator[534]: Ignoring "noauto" for root device
+[  +2.882068] systemd-fstab-generator[767]: Ignoring "noauto" for root device
+[  +0.643155] systemd-fstab-generator[804]: Ignoring "noauto" for root device
+[  +0.281301] systemd-fstab-generator[815]: Ignoring "noauto" for root device
+[  +0.294696] systemd-fstab-generator[828]: Ignoring "noauto" for root device
+[  +2.236226] systemd-fstab-generator[999]: Ignoring "noauto" for root device
+[  +0.260249] systemd-fstab-generator[1010]: Ignoring "noauto" for root device
+[  +0.269863] systemd-fstab-generator[1022]: Ignoring "noauto" for root device
+[  +0.259302] systemd-fstab-generator[1033]: Ignoring "noauto" for root device
+[Mar25 18:36] systemd-fstab-generator[1284]: Ignoring "noauto" for root device
+[  +0.381347] systemd-fstab-generator[1318]: Ignoring "noauto" for root device
+[  +0.189464] systemd-fstab-generator[1329]: Ignoring "noauto" for root device
+[  +0.200163] systemd-fstab-generator[1342]: Ignoring "noauto" for root device
+[  +1.556112] kauditd_printk_skb: 67 callbacks suppressed
+[  +0.328591] systemd-fstab-generator[1518]: Ignoring "noauto" for root device
+[  +0.193635] systemd-fstab-generator[1529]: Ignoring "noauto" for root device
+[  +0.187372] systemd-fstab-generator[1540]: Ignoring "noauto" for root device
+[  +0.181238] systemd-fstab-generator[1551]: Ignoring "noauto" for root device
+
+* 
+* ==> etcd [a82a0b0cbae6] <==
+* {"level":"info","ts":"2024-03-20T22:31:34.603098Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":97988}
+{"level":"info","ts":"2024-03-20T22:31:34.605512Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":97988,"took":"1.336287ms","hash":1105783237}
+{"level":"info","ts":"2024-03-20T22:31:34.606569Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":1105783237,"revision":97988,"compact-revision":97784}
+{"level":"info","ts":"2024-03-20T22:31:49.593716Z","caller":"traceutil/trace.go:171","msg":"trace[1917350535] linearizableReadLoop","detail":"{readStateIndex:123439; appliedIndex:123439; }","duration":"131.409394ms","start":"2024-03-20T22:31:49.460955Z","end":"2024-03-20T22:31:49.592344Z","steps":["trace[1917350535] 'read index received'  (duration: 112.538605ms)","trace[1917350535] 'applied index is now lower than readState.Index'  (duration: 170.408µs)"],"step_count":2}
+{"level":"warn","ts":"2024-03-20T22:31:49.643461Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"227.796939ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/validatingwebhookconfigurations/\" range_end:\"/registry/validatingwebhookconfigurations0\" count_only:true ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-20T22:31:49.651914Z","caller":"traceutil/trace.go:171","msg":"trace[20237645] range","detail":"{range_begin:/registry/validatingwebhookconfigurations/; range_end:/registry/validatingwebhookconfigurations0; response_count:0; response_revision:98205; }","duration":"276.061723ms","start":"2024-03-20T22:31:49.374339Z","end":"2024-03-20T22:31:49.6504Z","steps":["trace[20237645] 'agreement among raft nodes before linearized reading'  (duration: 215.583048ms)"],"step_count":1}
+{"level":"info","ts":"2024-03-20T22:43:06.901507Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":98194}
+{"level":"info","ts":"2024-03-20T22:43:06.904791Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":98194,"took":"1.209637ms","hash":2468713984}
+{"level":"info","ts":"2024-03-20T22:43:06.90511Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":2468713984,"revision":98194,"compact-revision":97988}
+{"level":"info","ts":"2024-03-20T22:46:04.009756Z","caller":"traceutil/trace.go:171","msg":"trace[1347494286] transaction","detail":"{read_only:false; response_revision:98569; number_of_response:1; }","duration":"153.628074ms","start":"2024-03-20T22:46:03.854831Z","end":"2024-03-20T22:46:04.008463Z","steps":["trace[1347494286] 'process raft request'  (duration: 33.434508ms)"],"step_count":1}
+{"level":"warn","ts":"2024-03-20T22:46:04.242456Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"193.97988ms","expected-duration":"100ms","prefix":"","request":"header:<ID:6042861284300702732 username:\"kube-apiserver-etcd-client\" auth_revision:1 > lease_grant:<ttl:15-second id:53dc8e5255b4440b>","response":"size:40"}
+{"level":"warn","ts":"2024-03-20T22:46:04.276002Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-20T22:46:03.875692Z","time spent":"399.914603ms","remote":"127.0.0.1:56864","response type":"/etcdserverpb.Lease/LeaseGrant","request count":-1,"request size":-1,"response count":-1,"response size":-1,"request content":""}
+{"level":"info","ts":"2024-03-20T22:46:04.29385Z","caller":"traceutil/trace.go:171","msg":"trace[1359254192] linearizableReadLoop","detail":"{readStateIndex:123897; appliedIndex:123896; }","duration":"116.140542ms","start":"2024-03-20T22:46:04.147494Z","end":"2024-03-20T22:46:04.263637Z","steps":["trace[1359254192] 'read index received'  (duration: 232.555µs)","trace[1359254192] 'applied index is now lower than readState.Index'  (duration: 115.876307ms)"],"step_count":2}
+{"level":"warn","ts":"2024-03-20T22:46:04.342237Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"183.413571ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/health\" ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-20T22:46:04.358224Z","caller":"traceutil/trace.go:171","msg":"trace[1670653667] range","detail":"{range_begin:/registry/health; range_end:; response_count:0; response_revision:98569; }","duration":"211.611079ms","start":"2024-03-20T22:46:04.146301Z","end":"2024-03-20T22:46:04.357912Z","steps":["trace[1670653667] 'agreement among raft nodes before linearized reading'  (duration: 183.060092ms)"],"step_count":1}
+{"level":"info","ts":"2024-03-20T22:48:06.913045Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":98432}
+{"level":"info","ts":"2024-03-20T22:48:06.925263Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":98432,"took":"10.258468ms","hash":1940438500}
+{"level":"info","ts":"2024-03-20T22:48:06.925648Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":1940438500,"revision":98432,"compact-revision":98194}
+{"level":"info","ts":"2024-03-20T22:53:06.923098Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":98667}
+{"level":"info","ts":"2024-03-20T22:53:06.928267Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":98667,"took":"2.705778ms","hash":3604893464}
+{"level":"info","ts":"2024-03-20T22:53:06.929102Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":3604893464,"revision":98667,"compact-revision":98432}
+{"level":"info","ts":"2024-03-20T22:58:06.931335Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":98905}
+{"level":"info","ts":"2024-03-20T22:58:06.932124Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":98905,"took":"474.219µs","hash":887652903}
+{"level":"info","ts":"2024-03-20T22:58:06.932226Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":887652903,"revision":98905,"compact-revision":98667}
+{"level":"info","ts":"2024-03-20T22:59:42.273163Z","caller":"traceutil/trace.go:171","msg":"trace[288053884] transaction","detail":"{read_only:false; response_revision:99217; number_of_response:1; }","duration":"100.447326ms","start":"2024-03-20T22:59:42.172691Z","end":"2024-03-20T22:59:42.273138Z","steps":["trace[288053884] 'process raft request'  (duration: 100.032248ms)"],"step_count":1}
+{"level":"info","ts":"2024-03-20T23:03:06.941744Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":99144}
+{"level":"info","ts":"2024-03-20T23:03:06.943945Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":99144,"took":"700.351µs","hash":974597808}
+{"level":"info","ts":"2024-03-20T23:03:06.944675Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":974597808,"revision":99144,"compact-revision":98905}
+{"level":"info","ts":"2024-03-20T23:05:59.438689Z","caller":"traceutil/trace.go:171","msg":"trace[1434523406] transaction","detail":"{read_only:false; response_revision:99517; number_of_response:1; }","duration":"180.642895ms","start":"2024-03-20T23:05:59.257993Z","end":"2024-03-20T23:05:59.438665Z","steps":["trace[1434523406] 'process raft request'  (duration: 180.093518ms)"],"step_count":1}
+{"level":"info","ts":"2024-03-20T23:08:06.949828Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":99380}
+{"level":"info","ts":"2024-03-20T23:08:06.951721Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":99380,"took":"560.024µs","hash":3147309746}
+{"level":"info","ts":"2024-03-20T23:08:06.952249Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":3147309746,"revision":99380,"compact-revision":99144}
+{"level":"info","ts":"2024-03-20T23:13:06.958148Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":99619}
+{"level":"info","ts":"2024-03-20T23:13:06.960019Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":99619,"took":"466.839µs","hash":1726942379}
+{"level":"info","ts":"2024-03-20T23:13:06.960147Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":1726942379,"revision":99619,"compact-revision":99380}
+{"level":"info","ts":"2024-03-20T23:18:06.967097Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":99855}
+{"level":"info","ts":"2024-03-20T23:18:06.97098Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":99855,"took":"1.423303ms","hash":2702094680}
+{"level":"info","ts":"2024-03-20T23:18:06.972031Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":2702094680,"revision":99855,"compact-revision":99619}
+{"level":"info","ts":"2024-03-20T23:22:29.818188Z","caller":"traceutil/trace.go:171","msg":"trace[921468871] transaction","detail":"{read_only:false; response_revision:100298; number_of_response:1; }","duration":"114.793038ms","start":"2024-03-20T23:22:29.703262Z","end":"2024-03-20T23:22:29.818067Z","steps":["trace[921468871] 'process raft request'  (duration: 33.468148ms)","trace[921468871] 'compare'  (duration: 77.074362ms)"],"step_count":2}
+{"level":"info","ts":"2024-03-20T23:23:06.98488Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":100092}
+{"level":"info","ts":"2024-03-20T23:23:06.989672Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":100092,"took":"1.939517ms","hash":3632690776}
+{"level":"info","ts":"2024-03-20T23:23:06.991551Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":3632690776,"revision":100092,"compact-revision":99855}
+{"level":"info","ts":"2024-03-20T23:28:07.0448Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":100327}
+{"level":"info","ts":"2024-03-20T23:28:07.049017Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":100327,"took":"3.342346ms","hash":1326402158}
+{"level":"info","ts":"2024-03-20T23:28:07.051565Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":1326402158,"revision":100327,"compact-revision":100092}
+{"level":"info","ts":"2024-03-20T23:33:07.06689Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":100558}
+{"level":"info","ts":"2024-03-20T23:33:07.071739Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":100558,"took":"4.084695ms","hash":1125176969}
+{"level":"info","ts":"2024-03-20T23:33:07.073855Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":1125176969,"revision":100558,"compact-revision":100327}
+{"level":"info","ts":"2024-03-20T23:38:07.093628Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":100790}
+{"level":"info","ts":"2024-03-20T23:38:07.096573Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":100790,"took":"2.36119ms","hash":1516804250}
+{"level":"info","ts":"2024-03-20T23:38:07.096683Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":1516804250,"revision":100790,"compact-revision":100558}
+{"level":"info","ts":"2024-03-20T23:43:07.610086Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":101024}
+{"level":"info","ts":"2024-03-20T23:43:07.617845Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":101024,"took":"1.948194ms","hash":2938769526}
+{"level":"info","ts":"2024-03-20T23:43:07.617954Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":2938769526,"revision":101024,"compact-revision":100790}
+{"level":"info","ts":"2024-03-20T23:48:08.067736Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":101258}
+{"level":"info","ts":"2024-03-20T23:48:08.085106Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":101258,"took":"11.136254ms","hash":1788321690}
+{"level":"info","ts":"2024-03-20T23:48:08.0853Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":1788321690,"revision":101258,"compact-revision":101024}
+{"level":"info","ts":"2024-03-20T23:53:08.101304Z","caller":"mvcc/index.go:214","msg":"compact tree index","revision":101489}
+{"level":"info","ts":"2024-03-20T23:53:08.104185Z","caller":"mvcc/kvstore_compaction.go:66","msg":"finished scheduled compaction","compact-revision":101489,"took":"2.31445ms","hash":2823152614}
+{"level":"info","ts":"2024-03-20T23:53:08.104944Z","caller":"mvcc/hash.go:137","msg":"storing new hash","hash":2823152614,"revision":101489,"compact-revision":101258}
+
+* 
+* ==> etcd [d9fbd3d457ab] <==
+* {"level":"info","ts":"2024-03-23T03:00:24.895664Z","caller":"traceutil/trace.go:171","msg":"trace[337666516] range","detail":"{range_begin:/registry/controllerrevisions/; range_end:/registry/controllerrevisions0; response_count:0; response_revision:153464; }","duration":"372.188213ms","start":"2024-03-23T03:00:24.523069Z","end":"2024-03-23T03:00:24.895095Z","steps":["trace[337666516] 'agreement among raft nodes before linearized reading'  (duration: 142.681324ms)"],"step_count":1}
+{"level":"warn","ts":"2024-03-23T03:00:24.964924Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"102.340904ms","expected-duration":"100ms","prefix":"read-only range ","request":"limit:1 serializable:true keys_only:true ","response":"range_response_count:0 size:6"}
+{"level":"warn","ts":"2024-03-23T03:00:24.933826Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:24.522786Z","time spent":"410.33643ms","remote":"127.0.0.1:38816","response type":"/etcdserverpb.KV/Range","request count":0,"request size":66,"response count":1,"response size":30,"request content":"key:\"/registry/controllerrevisions/\" range_end:\"/registry/controllerrevisions0\" count_only:true "}
+{"level":"info","ts":"2024-03-23T03:00:25.003254Z","caller":"traceutil/trace.go:171","msg":"trace[741003741] range","detail":"{range_begin:; range_end:; response_count:0; response_revision:153464; }","duration":"140.582074ms","start":"2024-03-23T03:00:24.862256Z","end":"2024-03-23T03:00:25.002839Z","steps":["trace[741003741] 'range keys from in-memory index tree'  (duration: 76.412775ms)","trace[741003741] 'filter and sort the key-value pairs'  (duration: 25.053667ms)"],"step_count":2}
+{"level":"info","ts":"2024-03-23T03:00:26.965265Z","caller":"traceutil/trace.go:171","msg":"trace[571768805] range","detail":"{range_begin:/registry/health; range_end:; response_count:0; response_revision:153464; }","duration":"155.049136ms","start":"2024-03-23T03:00:26.80907Z","end":"2024-03-23T03:00:26.964137Z","steps":["trace[571768805] 'agreement among raft nodes before linearized reading'  (duration: 115.666937ms)"],"step_count":1}
+{"level":"warn","ts":"2024-03-23T03:00:29.161143Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"132.612161ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/apiregistration.k8s.io/apiservices/\" range_end:\"/registry/apiregistration.k8s.io/apiservices0\" count_only:true ","response":"range_response_count:0 size:8"}
+{"level":"info","ts":"2024-03-23T03:00:29.162601Z","caller":"traceutil/trace.go:171","msg":"trace[768872764] range","detail":"{range_begin:/registry/apiregistration.k8s.io/apiservices/; range_end:/registry/apiregistration.k8s.io/apiservices0; response_count:0; response_revision:153464; }","duration":"157.16138ms","start":"2024-03-23T03:00:29.00502Z","end":"2024-03-23T03:00:29.16218Z","steps":["trace[768872764] 'agreement among raft nodes before linearized reading'  (duration: 117.111116ms)"],"step_count":1}
+{"level":"warn","ts":"2024-03-23T03:00:29.51778Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:29.004747Z","time spent":"512.12391ms","remote":"127.0.0.1:38080","response type":"/etcdserverpb.KV/Range","request count":0,"request size":96,"response count":21,"response size":30,"request content":"key:\"/registry/apiregistration.k8s.io/apiservices/\" range_end:\"/registry/apiregistration.k8s.io/apiservices0\" count_only:true "}
+{"level":"info","ts":"2024-03-23T03:00:29.931125Z","caller":"traceutil/trace.go:171","msg":"trace[1477044879] transaction","detail":"{read_only:false; response_revision:153465; number_of_response:1; }","duration":"870.740512ms","start":"2024-03-23T03:00:29.060098Z","end":"2024-03-23T03:00:29.93084Z","steps":["trace[1477044879] 'process raft request'  (duration: 806.981008ms)","trace[1477044879] 'store kv pair into bolt db' {req_type:put; key:/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii; req_size:670; } (duration: 27.098744ms)"],"step_count":2}
+{"level":"info","ts":"2024-03-23T03:00:29.98622Z","caller":"traceutil/trace.go:171","msg":"trace[1579457515] linearizableReadLoop","detail":"{readStateIndex:192865; appliedIndex:192864; }","duration":"783.563922ms","start":"2024-03-23T03:00:29.170743Z","end":"2024-03-23T03:00:29.960799Z","steps":["trace[1579457515] 'read index received'  (duration: 698.622314ms)","trace[1579457515] 'applied index is now lower than readState.Index'  (duration: 84.19848ms)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:30.086335Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:29.059748Z","time spent":"912.901521ms","remote":"127.0.0.1:38802","response type":"/etcdserverpb.KV/Txn","request count":1,"request size":673,"response count":0,"response size":40,"request content":"compare:<target:MOD key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" mod_revision:153461 > success:<request_put:<key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" value_size:600 >> failure:<request_range:<key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" > >"}
+{"level":"warn","ts":"2024-03-23T03:00:30.241997Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"1.096853799s","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/pods/\" range_end:\"/registry/pods0\" count_only:true ","response":"range_response_count:0 size:8"}
+{"level":"info","ts":"2024-03-23T03:00:30.327682Z","caller":"traceutil/trace.go:171","msg":"trace[671077544] range","detail":"{range_begin:/registry/pods/; range_end:/registry/pods0; response_count:0; response_revision:153465; }","duration":"1.182219095s","start":"2024-03-23T03:00:29.143748Z","end":"2024-03-23T03:00:30.32598Z","steps":["trace[671077544] 'agreement among raft nodes before linearized reading'  (duration: 882.534312ms)","trace[671077544] 'count revisions from in-memory index tree'  (duration: 186.212247ms)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:30.351945Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:29.142796Z","time spent":"1.20821469s","remote":"127.0.0.1:38814","response type":"/etcdserverpb.KV/Range","request count":0,"request size":36,"response count":13,"response size":30,"request content":"key:\"/registry/pods/\" range_end:\"/registry/pods0\" count_only:true "}
+{"level":"warn","ts":"2024-03-23T03:00:30.377847Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"312.870887ms","expected-duration":"100ms","prefix":"","request":"header:<ID:6042861356292727281 username:\"kube-apiserver-etcd-client\" auth_revision:1 > txn:<compare:<target:MOD key:\"/registry/leases/kube-node-lease/minikube\" mod_revision:153462 > success:<request_put:<key:\"/registry/leases/kube-node-lease/minikube\" value_size:472 >> failure:<request_range:<key:\"/registry/leases/kube-node-lease/minikube\" > >>","response":"size:18"}
+{"level":"info","ts":"2024-03-23T03:00:30.51868Z","caller":"traceutil/trace.go:171","msg":"trace[1140604963] linearizableReadLoop","detail":"{readStateIndex:192866; appliedIndex:192865; }","duration":"530.267334ms","start":"2024-03-23T03:00:29.987881Z","end":"2024-03-23T03:00:30.518325Z","steps":["trace[1140604963] 'read index received'  (duration: 75.375194ms)","trace[1140604963] 'applied index is now lower than readState.Index'  (duration: 454.429172ms)"],"step_count":2}
+{"level":"info","ts":"2024-03-23T03:00:30.584217Z","caller":"traceutil/trace.go:171","msg":"trace[1989687318] transaction","detail":"{read_only:false; response_revision:153466; number_of_response:1; }","duration":"794.747628ms","start":"2024-03-23T03:00:29.788997Z","end":"2024-03-23T03:00:30.58382Z","steps":["trace[1989687318] 'process raft request'  (duration: 275.00383ms)","trace[1989687318] 'compare'  (duration: 107.763391ms)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:30.632739Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"827.597894ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/health\" ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-23T03:00:30.732725Z","caller":"traceutil/trace.go:171","msg":"trace[1933325812] range","detail":"{range_begin:/registry/health; range_end:; response_count:0; response_revision:153466; }","duration":"905.884531ms","start":"2024-03-23T03:00:29.804734Z","end":"2024-03-23T03:00:30.710291Z","steps":["trace[1933325812] 'agreement among raft nodes before linearized reading'  (duration: 714.416613ms)","trace[1933325812] 'range keys from in-memory index tree'  (duration: 64.330718ms)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:30.734246Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:29.802198Z","time spent":"929.297419ms","remote":"127.0.0.1:37930","response type":"/etcdserverpb.KV/Range","request count":0,"request size":18,"response count":0,"response size":28,"request content":"key:\"/registry/health\" "}
+{"level":"warn","ts":"2024-03-23T03:00:30.764701Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:29.784287Z","time spent":"844.747015ms","remote":"127.0.0.1:38802","response type":"/etcdserverpb.KV/Txn","request count":1,"request size":521,"response count":0,"response size":40,"request content":"compare:<target:MOD key:\"/registry/leases/kube-node-lease/minikube\" mod_revision:153462 > success:<request_put:<key:\"/registry/leases/kube-node-lease/minikube\" value_size:472 >> failure:<request_range:<key:\"/registry/leases/kube-node-lease/minikube\" > >"}
+{"level":"warn","ts":"2024-03-23T03:00:31.914452Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"164.195161ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/health\" ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-23T03:00:31.91565Z","caller":"traceutil/trace.go:171","msg":"trace[1154388799] range","detail":"{range_begin:/registry/health; range_end:; response_count:0; response_revision:153466; }","duration":"165.362377ms","start":"2024-03-23T03:00:31.730304Z","end":"2024-03-23T03:00:31.915255Z","steps":["trace[1154388799] 'agreement among raft nodes before linearized reading'  (duration: 162.900809ms)"],"step_count":1}
+{"level":"info","ts":"2024-03-23T03:00:31.859055Z","caller":"traceutil/trace.go:171","msg":"trace[1065055968] linearizableReadLoop","detail":"{readStateIndex:192866; appliedIndex:192866; }","duration":"107.876635ms","start":"2024-03-23T03:00:31.750847Z","end":"2024-03-23T03:00:31.858734Z","steps":["trace[1065055968] 'read index received'  (duration: 107.658844ms)","trace[1065055968] 'applied index is now lower than readState.Index'  (duration: 125.837µs)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:35.011802Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"139.836447ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/health\" ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-23T03:00:35.012864Z","caller":"traceutil/trace.go:171","msg":"trace[913436569] range","detail":"{range_begin:/registry/health; range_end:; response_count:0; response_revision:153467; }","duration":"141.00966ms","start":"2024-03-23T03:00:34.871741Z","end":"2024-03-23T03:00:35.012726Z","steps":["trace[913436569] 'agreement among raft nodes before linearized reading'  (duration: 133.121206ms)"],"step_count":1}
+{"level":"info","ts":"2024-03-23T03:00:35.004906Z","caller":"traceutil/trace.go:171","msg":"trace[854424303] linearizableReadLoop","detail":"{readStateIndex:192868; appliedIndex:192868; }","duration":"129.072332ms","start":"2024-03-23T03:00:34.872296Z","end":"2024-03-23T03:00:34.982314Z","steps":["trace[854424303] 'read index received'  (duration: 106.58728ms)","trace[854424303] 'applied index is now lower than readState.Index'  (duration: 385.707µs)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:35.055742Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"125.961988ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/limitranges/\" range_end:\"/registry/limitranges0\" count_only:true ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-23T03:00:35.063397Z","caller":"traceutil/trace.go:171","msg":"trace[89101563] range","detail":"{range_begin:/registry/limitranges/; range_end:/registry/limitranges0; response_count:0; response_revision:153467; }","duration":"155.941191ms","start":"2024-03-23T03:00:34.90687Z","end":"2024-03-23T03:00:35.063047Z","steps":["trace[89101563] 'agreement among raft nodes before linearized reading'  (duration: 139.673429ms)"],"step_count":1}
+{"level":"warn","ts":"2024-03-23T03:00:40.965723Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"104.68703ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/masterleases/10.211.55.2\" ","response":"range_response_count:1 size:134"}
+{"level":"info","ts":"2024-03-23T03:00:40.966893Z","caller":"traceutil/trace.go:171","msg":"trace[1676425500] range","detail":"{range_begin:/registry/masterleases/10.211.55.2; range_end:; response_count:1; response_revision:153470; }","duration":"106.031657ms","start":"2024-03-23T03:00:40.843156Z","end":"2024-03-23T03:00:40.966663Z","steps":["trace[1676425500] 'agreement among raft nodes before linearized reading'  (duration: 74.304928ms)","trace[1676425500] 'range keys from in-memory index tree'  (duration: 27.169608ms)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:51.500754Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"132.637448ms","expected-duration":"100ms","prefix":"","request":"header:<ID:6042861356292727353 username:\"kube-apiserver-etcd-client\" auth_revision:1 > txn:<compare:<target:MOD key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" mod_revision:153474 > success:<request_put:<key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" value_size:1021 >> failure:<request_range:<key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" > >>","response":"size:18"}
+{"level":"info","ts":"2024-03-23T03:00:51.536674Z","caller":"traceutil/trace.go:171","msg":"trace[1682273396] linearizableReadLoop","detail":"{readStateIndex:192881; appliedIndex:192880; }","duration":"252.688192ms","start":"2024-03-23T03:00:51.283654Z","end":"2024-03-23T03:00:51.536184Z","steps":["trace[1682273396] 'read index received'  (duration: 64.596085ms)","trace[1682273396] 'applied index is now lower than readState.Index'  (duration: 187.838834ms)"],"step_count":2}
+{"level":"info","ts":"2024-03-23T03:00:51.551695Z","caller":"traceutil/trace.go:171","msg":"trace[1905865336] transaction","detail":"{read_only:false; response_revision:153476; number_of_response:1; }","duration":"299.567142ms","start":"2024-03-23T03:00:51.251723Z","end":"2024-03-23T03:00:51.551118Z","steps":["trace[1905865336] 'process raft request'  (duration: 13.348523ms)","trace[1905865336] 'compare'  (duration: 112.64355ms)","trace[1905865336] 'attach lease to kv pair' {req_type:put; key:/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath; req_size:1091; } (duration: 17.281954ms)"],"step_count":3}
+{"level":"warn","ts":"2024-03-23T03:00:51.563047Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:51.251641Z","time spent":"300.951149ms","remote":"127.0.0.1:37976","response type":"/etcdserverpb.KV/Txn","request count":1,"request size":1094,"response count":0,"response size":40,"request content":"compare:<target:MOD key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" mod_revision:153474 > success:<request_put:<key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" value_size:1021 >> failure:<request_range:<key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" > >"}
+{"level":"warn","ts":"2024-03-23T03:00:51.723197Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"439.652963ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/services/endpoints/default/kubernetes\" ","response":"range_response_count:1 size:421"}
+{"level":"info","ts":"2024-03-23T03:00:51.737161Z","caller":"traceutil/trace.go:171","msg":"trace[1592564363] range","detail":"{range_begin:/registry/services/endpoints/default/kubernetes; range_end:; response_count:1; response_revision:153476; }","duration":"454.003985ms","start":"2024-03-23T03:00:51.282899Z","end":"2024-03-23T03:00:51.736891Z","steps":["trace[1592564363] 'agreement among raft nodes before linearized reading'  (duration: 254.112581ms)","trace[1592564363] 'range keys from in-memory index tree'  (duration: 138.029651ms)","trace[1592564363] 'range keys from bolt db'  (duration: 26.733426ms)","trace[1592564363] 'filter and sort the key-value pairs'  (duration: 20.594898ms)"],"step_count":4}
+{"level":"warn","ts":"2024-03-23T03:00:51.738258Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:51.282817Z","time spent":"454.960905ms","remote":"127.0.0.1:37976","response type":"/etcdserverpb.KV/Range","request count":0,"request size":49,"response count":1,"response size":443,"request content":"key:\"/registry/services/endpoints/default/kubernetes\" "}
+{"level":"warn","ts":"2024-03-23T03:00:51.740786Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"216.99155ms","expected-duration":"100ms","prefix":"","request":"header:<ID:6042861356292727354 username:\"kube-apiserver-etcd-client\" auth_revision:1 > txn:<compare:<target:MOD key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" mod_revision:153470 > success:<request_put:<key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" value_size:599 >> failure:<request_range:<key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" > >>","response":"size:18"}
+{"level":"info","ts":"2024-03-23T03:00:51.793076Z","caller":"traceutil/trace.go:171","msg":"trace[809265653] transaction","detail":"{read_only:false; response_revision:153477; number_of_response:1; }","duration":"382.091459ms","start":"2024-03-23T03:00:51.410847Z","end":"2024-03-23T03:00:51.792786Z","steps":["trace[809265653] 'process raft request'  (duration: 112.769687ms)","trace[809265653] 'compare'  (duration: 104.381383ms)","trace[809265653] 'get key's previous created_revision and leaseID' {req_type:put; key:/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii; req_size:669; } (duration: 34.164109ms)","trace[809265653] 'attach lease to kv pair' {req_type:put; key:/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii; req_size:669; } (duration: 15.622285ms)"],"step_count":4}
+{"level":"warn","ts":"2024-03-23T03:00:51.841773Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:51.381308Z","time spent":"459.642664ms","remote":"127.0.0.1:38802","response type":"/etcdserverpb.KV/Txn","request count":1,"request size":672,"response count":0,"response size":40,"request content":"compare:<target:MOD key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" mod_revision:153470 > success:<request_put:<key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" value_size:599 >> failure:<request_range:<key:\"/registry/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii\" > >"}
+{"level":"info","ts":"2024-03-23T03:00:51.985743Z","caller":"traceutil/trace.go:171","msg":"trace[1773725130] linearizableReadLoop","detail":"{readStateIndex:192882; appliedIndex:192882; }","duration":"133.836449ms","start":"2024-03-23T03:00:51.851828Z","end":"2024-03-23T03:00:51.985663Z","steps":["trace[1773725130] 'read index received'  (duration: 133.357388ms)","trace[1773725130] 'applied index is now lower than readState.Index'  (duration: 384.508µs)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:52.093261Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"241.713383ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/resourcequotas/\" range_end:\"/registry/resourcequotas0\" count_only:true ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-23T03:00:52.09414Z","caller":"traceutil/trace.go:171","msg":"trace[1900657482] range","detail":"{range_begin:/registry/resourcequotas/; range_end:/registry/resourcequotas0; response_count:0; response_revision:153477; }","duration":"242.805736ms","start":"2024-03-23T03:00:51.851052Z","end":"2024-03-23T03:00:52.093882Z","steps":["trace[1900657482] 'agreement among raft nodes before linearized reading'  (duration: 178.142784ms)","trace[1900657482] 'get authentication metadata'  (duration: 63.062353ms)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:52.161148Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"303.426911ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/masterleases/\" range_end:\"/registry/masterleases0\" ","response":"range_response_count:1 size:134"}
+{"level":"info","ts":"2024-03-23T03:00:52.185092Z","caller":"traceutil/trace.go:171","msg":"trace[1885179259] range","detail":"{range_begin:/registry/masterleases/; range_end:/registry/masterleases0; response_count:1; response_revision:153477; }","duration":"327.767235ms","start":"2024-03-23T03:00:51.856953Z","end":"2024-03-23T03:00:52.184858Z","steps":["trace[1885179259] 'agreement among raft nodes before linearized reading'  (duration: 301.051699ms)"],"step_count":1}
+{"level":"warn","ts":"2024-03-23T03:00:52.192164Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:51.85685Z","time spent":"328.784326ms","remote":"127.0.0.1:37936","response type":"/etcdserverpb.KV/Range","request count":0,"request size":50,"response count":1,"response size":156,"request content":"key:\"/registry/masterleases/\" range_end:\"/registry/masterleases0\" "}
+{"level":"warn","ts":"2024-03-23T03:00:52.582023Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"203.981458ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/endpointslices/default/kubernetes\" ","response":"range_response_count:1 size:480"}
+{"level":"info","ts":"2024-03-23T03:00:52.582944Z","caller":"traceutil/trace.go:171","msg":"trace[346738824] range","detail":"{range_begin:/registry/endpointslices/default/kubernetes; range_end:; response_count:1; response_revision:153478; }","duration":"205.031233ms","start":"2024-03-23T03:00:52.377688Z","end":"2024-03-23T03:00:52.582721Z","steps":["trace[346738824] 'agreement among raft nodes before linearized reading'  (duration: 45.088844ms)","trace[346738824] 'get authentication metadata'  (duration: 68.500933ms)","trace[346738824] 'range keys from in-memory index tree'  (duration: 85.446955ms)"],"step_count":3}
+{"level":"warn","ts":"2024-03-23T03:00:57.213955Z","caller":"etcdserver/v3_server.go:897","msg":"waiting for ReadIndex response took too long, retrying","sent-request-id":6042861356292727366,"retry-timeout":"500ms"}
+{"level":"info","ts":"2024-03-23T03:00:57.241926Z","caller":"traceutil/trace.go:171","msg":"trace[122039850] linearizableReadLoop","detail":"{readStateIndex:192884; appliedIndex:192884; }","duration":"1.861611329s","start":"2024-03-23T03:00:55.380216Z","end":"2024-03-23T03:00:57.24185Z","steps":["trace[122039850] 'read index received'  (duration: 1.861558555s)","trace[122039850] 'applied index is now lower than readState.Index'  (duration: 28.186µs)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:57.260019Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"1.909687079s","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/health\" ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-23T03:00:57.260212Z","caller":"traceutil/trace.go:171","msg":"trace[438259670] range","detail":"{range_begin:/registry/health; range_end:; response_count:0; response_revision:153479; }","duration":"1.910147349s","start":"2024-03-23T03:00:55.350007Z","end":"2024-03-23T03:00:57.260178Z","steps":["trace[438259670] 'agreement among raft nodes before linearized reading'  (duration: 1.90968588s)"],"step_count":1}
+{"level":"warn","ts":"2024-03-23T03:00:57.260568Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:55.349777Z","time spent":"1.910593825s","remote":"127.0.0.1:37930","response type":"/etcdserverpb.KV/Range","request count":0,"request size":18,"response count":0,"response size":28,"request content":"key:\"/registry/health\" "}
+{"level":"info","ts":"2024-03-23T03:00:57.423961Z","caller":"traceutil/trace.go:171","msg":"trace[1328057269] linearizableReadLoop","detail":"{readStateIndex:192885; appliedIndex:192884; }","duration":"181.851229ms","start":"2024-03-23T03:00:57.24207Z","end":"2024-03-23T03:00:57.423922Z","steps":["trace[1328057269] 'read index received'  (duration: 177.241035ms)","trace[1328057269] 'applied index is now lower than readState.Index'  (duration: 4.583907ms)"],"step_count":2}
+{"level":"warn","ts":"2024-03-23T03:00:57.424462Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"526.923406ms","expected-duration":"100ms","prefix":"read-only range ","request":"key:\"/registry/ingressclasses/\" range_end:\"/registry/ingressclasses0\" count_only:true ","response":"range_response_count:0 size:6"}
+{"level":"info","ts":"2024-03-23T03:00:57.424954Z","caller":"traceutil/trace.go:171","msg":"trace[63118664] range","detail":"{range_begin:/registry/ingressclasses/; range_end:/registry/ingressclasses0; response_count:0; response_revision:153479; }","duration":"527.579778ms","start":"2024-03-23T03:00:56.897296Z","end":"2024-03-23T03:00:57.424921Z","steps":["trace[63118664] 'agreement among raft nodes before linearized reading'  (duration: 526.819259ms)"],"step_count":1}
+{"level":"warn","ts":"2024-03-23T03:00:57.425101Z","caller":"v3rpc/interceptor.go:197","msg":"request stats","start time":"2024-03-23T03:00:56.897263Z","time spent":"527.781877ms","remote":"127.0.0.1:38786","response type":"/etcdserverpb.KV/Range","request count":0,"request size":56,"response count":0,"response size":28,"request content":"key:\"/registry/ingressclasses/\" range_end:\"/registry/ingressclasses0\" count_only:true "}
+{"level":"warn","ts":"2024-03-23T03:01:08.510902Z","caller":"etcdserver/util.go:170","msg":"apply request took too long","took":"164.366276ms","expected-duration":"100ms","prefix":"","request":"header:<ID:6042861356292727422 username:\"kube-apiserver-etcd-client\" auth_revision:1 > txn:<compare:<target:MOD key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" mod_revision:153486 > success:<request_put:<key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" value_size:1021 >> failure:<request_range:<key:\"/registry/services/endpoints/kube-system/k8s.io-minikube-hostpath\" > >>","response":"size:18"}
+{"level":"info","ts":"2024-03-23T03:01:08.520048Z","caller":"traceutil/trace.go:171","msg":"trace[2068248710] transaction","detail":"{read_only:false; response_revision:153487; number_of_response:1; }","duration":"184.344681ms","start":"2024-03-23T03:01:08.335647Z","end":"2024-03-23T03:01:08.519993Z","steps":["trace[2068248710] 'compare'  (duration: 142.157686ms)"],"step_count":1}
+
+* 
+* ==> kernel <==
+*  18:39:58 up 5 min,  0 users,  load average: 0.17, 0.11, 0.05
+Linux minikube 5.10.57 #1 SMP Tue Nov 7 06:51:54 UTC 2023 x86_64 GNU/Linux
+PRETTY_NAME="Buildroot 2021.02.12"
+
+* 
+* ==> kube-apiserver [01f7434d3c37] <==
+* Trace[1788824615]:  ---"Txn call completed" 844ms (23:19:20.230)]
+Trace[1788824615]: [1.107527959s] [1.107527959s] END
+I0322 23:19:33.310875       1 trace.go:236] Trace[2080485712]: "Update" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:0569b7a4-feb7-4923-9bc3-8510c38feea9,client:10.211.55.2,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/minikube,user-agent:kubelet/v1.28.3 (linux/amd64) kubernetes/a8a1abc,verb:PUT (22-Mar-2024 23:19:32.739) (total time: 571ms):
+Trace[2080485712]: ---"limitedReadBody succeeded" len:478 163ms (23:19:32.902)
+Trace[2080485712]: [571.107103ms] [571.107103ms] END
+I0323 00:38:49.921783       1 trace.go:236] Trace[2070758684]: "Update" accept:application/vnd.kubernetes.protobuf, */*,audit-id:5f2c5d42-e4ac-497d-a222-be7c17297b01,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/apiserver-eqt674mfxb4j56mrjjkoe7b7ii,user-agent:kube-apiserver/v1.28.3 (linux/amd64) kubernetes/a8a1abc,verb:PUT (23-Mar-2024 00:38:49.113) (total time: 807ms):
+Trace[2070758684]: ["GuaranteedUpdate etcd3" audit-id:5f2c5d42-e4ac-497d-a222-be7c17297b01,key:/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii,type:*coordination.Lease,resource:leases.coordination.k8s.io 807ms (00:38:49.114)
+Trace[2070758684]:  ---"Txn call completed" 805ms (00:38:49.920)]
+Trace[2070758684]: [807.866665ms] [807.866665ms] END
+I0323 03:00:21.373678       1 trace.go:236] Trace[1713974226]: "GuaranteedUpdate etcd3" audit-id:,key:/masterleases/10.211.55.2,type:*v1.Endpoints,resource:apiServerIPInfo (23-Mar-2024 03:00:20.736) (total time: 629ms):
+Trace[1713974226]: ---"initial value restored" 181ms (03:00:20.917)
+Trace[1713974226]: ---"Transaction prepared" 211ms (03:00:21.140)
+Trace[1713974226]: ---"Txn call completed" 224ms (03:00:21.364)
+Trace[1713974226]: [629.248718ms] [629.248718ms] END
+I0323 03:00:30.323732       1 trace.go:236] Trace[1099287747]: "Update" accept:application/vnd.kubernetes.protobuf, */*,audit-id:661f8dec-fc7a-4443-985d-c12cdf12ee98,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/apiserver-eqt674mfxb4j56mrjjkoe7b7ii,user-agent:kube-apiserver/v1.28.3 (linux/amd64) kubernetes/a8a1abc,verb:PUT (23-Mar-2024 03:00:27.907) (total time: 2405ms):
+Trace[1099287747]: ["GuaranteedUpdate etcd3" audit-id:661f8dec-fc7a-4443-985d-c12cdf12ee98,key:/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii,type:*coordination.Lease,resource:leases.coordination.k8s.io 2372ms (03:00:27.935)
+Trace[1099287747]:  ---"About to Encode" 868ms (03:00:28.810)
+Trace[1099287747]:  ---"Txn call completed" 1473ms (03:00:30.285)]
+Trace[1099287747]: ---"Writing http response done" 17ms (03:00:30.304)
+Trace[1099287747]: [2.405099949s] [2.405099949s] END
+I0323 03:00:31.575446       1 trace.go:236] Trace[74615294]: "Update" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:fb48f85e-3b8a-4f22-baa2-58995220acce,client:10.211.55.2,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/minikube,user-agent:kubelet/v1.28.3 (linux/amd64) kubernetes/a8a1abc,verb:PUT (23-Mar-2024 03:00:29.093) (total time: 2473ms):
+Trace[74615294]: ---"limitedReadBody succeeded" len:478 138ms (03:00:29.231)
+Trace[74615294]: ["GuaranteedUpdate etcd3" audit-id:fb48f85e-3b8a-4f22-baa2-58995220acce,key:/leases/kube-node-lease/minikube,type:*coordination.Lease,resource:leases.coordination.k8s.io 2327ms (03:00:29.239)
+Trace[74615294]:  ---"About to Encode" 143ms (03:00:29.384)
+Trace[74615294]:  ---"Txn call completed" 1968ms (03:00:31.367)]
+Trace[74615294]: ---"Write to database call succeeded" len:478 57ms (03:00:31.433)
+Trace[74615294]: ---"Writing http response done" 132ms (03:00:31.566)
+Trace[74615294]: [2.47312112s] [2.47312112s] END
+I0323 03:00:32.355865       1 trace.go:236] Trace[38901154]: "GuaranteedUpdate etcd3" audit-id:,key:/masterleases/10.211.55.2,type:*v1.Endpoints,resource:apiServerIPInfo (23-Mar-2024 03:00:30.772) (total time: 1575ms):
+Trace[38901154]: ---"initial value restored" 843ms (03:00:31.616)
+Trace[38901154]: ---"Transaction prepared" 536ms (03:00:32.164)
+Trace[38901154]: ---"Txn call completed" 182ms (03:00:32.347)
+Trace[38901154]: [1.575455878s] [1.575455878s] END
+I0323 03:00:41.080069       1 trace.go:236] Trace[309971966]: "Update" accept:application/vnd.kubernetes.protobuf, */*,audit-id:ae033486-e6d4-4fe2-822c-77413c60422e,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/apiserver-eqt674mfxb4j56mrjjkoe7b7ii,user-agent:kube-apiserver/v1.28.3 (linux/amd64) kubernetes/a8a1abc,verb:PUT (23-Mar-2024 03:00:40.542) (total time: 536ms):
+Trace[309971966]: ["GuaranteedUpdate etcd3" audit-id:ae033486-e6d4-4fe2-822c-77413c60422e,key:/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii,type:*coordination.Lease,resource:leases.coordination.k8s.io 521ms (03:00:40.558)
+Trace[309971966]:  ---"About to Encode" 242ms (03:00:40.801)
+Trace[309971966]:  ---"Txn call completed" 262ms (03:00:41.064)]
+Trace[309971966]: [536.605863ms] [536.605863ms] END
+I0323 03:00:41.382207       1 trace.go:236] Trace[171193467]: "GuaranteedUpdate etcd3" audit-id:,key:/masterleases/10.211.55.2,type:*v1.Endpoints,resource:apiServerIPInfo (23-Mar-2024 03:00:40.787) (total time: 594ms):
+Trace[171193467]: ---"initial value restored" 247ms (03:00:41.035)
+Trace[171193467]: ---"Transaction prepared" 271ms (03:00:41.307)
+Trace[171193467]: ---"Txn call completed" 73ms (03:00:41.380)
+Trace[171193467]: [594.199352ms] [594.199352ms] END
+I0323 03:00:51.716147       1 trace.go:236] Trace[2030231604]: "Update" accept:application/json, */*,audit-id:d4b4f5cb-a5bb-404c-b359-af3c0b128403,client:10.211.55.2,protocol:HTTP/2.0,resource:endpoints,scope:resource,url:/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath,user-agent:storage-provisioner/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (23-Mar-2024 03:00:50.808) (total time: 907ms):
+Trace[2030231604]: ---"limitedReadBody succeeded" len:1356 304ms (03:00:51.106)
+Trace[2030231604]: ["GuaranteedUpdate etcd3" audit-id:d4b4f5cb-a5bb-404c-b359-af3c0b128403,key:/services/endpoints/kube-system/k8s.io-minikube-hostpath,type:*core.Endpoints,resource:endpoints 599ms (03:00:51.115)
+Trace[2030231604]:  ---"About to Encode" 61ms (03:00:51.185)
+Trace[2030231604]:  ---"Txn call completed" 459ms (03:00:51.648)]
+Trace[2030231604]: ---"Writing http response done" 63ms (03:00:51.715)
+Trace[2030231604]: [907.58558ms] [907.58558ms] END
+I0323 03:00:51.813958       1 trace.go:236] Trace[425659560]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:9beb2798-8733-4c58-a6c9-5ad24193cd2c,client:127.0.0.1,protocol:HTTP/2.0,resource:endpoints,scope:resource,url:/api/v1/namespaces/default/endpoints/kubernetes,user-agent:kube-apiserver/v1.28.3 (linux/amd64) kubernetes/a8a1abc,verb:GET (23-Mar-2024 03:00:51.246) (total time: 565ms):
+Trace[425659560]: ---"About to write a response" 552ms (03:00:51.799)
+Trace[425659560]: [565.025046ms] [565.025046ms] END
+I0323 03:00:51.989699       1 trace.go:236] Trace[1181866419]: "Update" accept:application/vnd.kubernetes.protobuf, */*,audit-id:8496d365-b840-401a-8916-2ab77d3e8686,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/apiserver-eqt674mfxb4j56mrjjkoe7b7ii,user-agent:kube-apiserver/v1.28.3 (linux/amd64) kubernetes/a8a1abc,verb:PUT (23-Mar-2024 03:00:51.261) (total time: 723ms):
+Trace[1181866419]: ["GuaranteedUpdate etcd3" audit-id:8496d365-b840-401a-8916-2ab77d3e8686,key:/leases/kube-system/apiserver-eqt674mfxb4j56mrjjkoe7b7ii,type:*coordination.Lease,resource:leases.coordination.k8s.io 712ms (03:00:51.273)
+Trace[1181866419]:  ---"About to Encode" 67ms (03:00:51.340)
+Trace[1181866419]:  ---"Txn call completed" 561ms (03:00:51.903)]
+Trace[1181866419]: ---"Write to database call succeeded" len:605 18ms (03:00:51.922)
+Trace[1181866419]: ---"Writing http response done" 62ms (03:00:51.985)
+Trace[1181866419]: [723.945046ms] [723.945046ms] END
+
+* 
+* ==> kube-apiserver [b65d5834e9a3] <==
+* I0322 19:42:21.271563       1 controller.go:116] "failed to update lease using latest lease, fallback to ensure lease" err="failed 5 attempts to update lease"
+E0322 19:42:21.271691       1 controller.go:146] "Failed to ensure lease exists, will retry" err="context canceled" interval="200ms"
+I0322 19:42:20.916321       1 cluster_authentication_trust_controller.go:463] Shutting down cluster_authentication_trust_controller controller
+I0322 19:42:20.916690       1 apiservice_controller.go:131] Shutting down APIServiceRegistrationController
+I0322 19:42:20.916993       1 apf_controller.go:384] Shutting down API Priority and Fairness config worker
+I0322 19:42:20.917284       1 system_namespaces_controller.go:77] Shutting down system namespaces controller
+I0322 19:42:20.917556       1 available_controller.go:439] Shutting down AvailableConditionController
+I0322 19:42:20.917693       1 gc_controller.go:91] Shutting down apiserver lease garbage collector
+I0322 19:42:20.917857       1 gc_controller.go:91] Shutting down apiserver lease garbage collector
+I0322 19:42:20.917918       1 autoregister_controller.go:165] Shutting down autoregister controller
+I0322 19:42:20.918097       1 controller.go:129] Ending legacy_token_tracking_controller
+I0322 19:42:21.276680       1 controller.go:130] Shutting down legacy_token_tracking_controller
+E0322 19:42:21.274474       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:generic-garbage-collector: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:generic-garbage-collector": net/http: TLS handshake timeout
+I0322 19:42:20.918312       1 crd_finalizer.go:278] Shutting down CRDFinalizer
+I0322 19:42:20.918454       1 apiapproval_controller.go:198] Shutting down KubernetesAPIApprovalPolicyConformantConditionController
+I0322 19:42:20.918710       1 naming_controller.go:302] Shutting down NamingConditionController
+I0322 19:42:20.918876       1 controller.go:115] Shutting down OpenAPI V3 controller
+I0322 19:42:20.918954       1 controller.go:162] Shutting down OpenAPI controller
+I0322 19:42:20.919102       1 establishing_controller.go:87] Shutting down EstablishingController
+I0322 19:42:20.919358       1 customresource_discovery_controller.go:325] Shutting down DiscoveryController
+I0322 19:42:20.919615       1 nonstructuralschema_controller.go:204] Shutting down NonStructuralSchemaConditionController
+I0322 19:42:20.919817       1 crdregistration_controller.go:142] Shutting down crd-autoregister controller
+I0322 19:42:20.947907       1 dynamic_cafile_content.go:171] "Shutting down controller" name="request-header::/var/lib/minikube/certs/front-proxy-ca.crt"
+I0322 19:42:20.949044       1 dynamic_cafile_content.go:171] "Shutting down controller" name="client-ca-bundle::/var/lib/minikube/certs/ca.crt"
+I0322 19:42:20.949355       1 dynamic_serving_content.go:146] "Shutting down controller" name="aggregator-proxy-cert::/var/lib/minikube/certs/front-proxy-client.crt::/var/lib/minikube/certs/front-proxy-client.key"
+I0322 19:42:20.950741       1 object_count_tracker.go:151] "StorageObjectCountTracker pruner is exiting"
+I0322 19:42:20.950964       1 controller.go:86] Shutting down OpenAPI V3 AggregationController
+I0322 19:42:20.951115       1 controller.go:84] Shutting down OpenAPI AggregationController
+I0322 19:42:20.957283       1 tlsconfig.go:255] "Shutting down DynamicServingCertificateController"
+E0322 19:42:20.962797       1 timeout.go:142] post-timeout activity - time-elapsed: 3m28.381968794s, GET "/readyz" result: <nil>
+I0322 19:42:20.970656       1 dynamic_serving_content.go:146] "Shutting down controller" name="serving-cert::/var/lib/minikube/certs/apiserver.crt::/var/lib/minikube/certs/apiserver.key"
+I0322 19:42:20.976264       1 dynamic_cafile_content.go:171] "Shutting down controller" name="client-ca-bundle::/var/lib/minikube/certs/ca.crt"
+I0322 19:42:20.979335       1 controller.go:159] Shutting down quota evaluator
+I0322 19:42:21.301308       1 controller.go:178] quota evaluator worker shutdown
+I0322 19:42:21.084735       1 secure_serving.go:258] Stopped listening on [::]:8443
+I0322 19:42:21.306131       1 controller.go:178] quota evaluator worker shutdown
+I0322 19:42:21.306353       1 controller.go:178] quota evaluator worker shutdown
+I0322 19:42:21.306600       1 controller.go:178] quota evaluator worker shutdown
+I0322 19:42:21.306668       1 controller.go:178] quota evaluator worker shutdown
+E0322 19:42:21.353283       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:horizontal-pod-autoscaler: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:horizontal-pod-autoscaler": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.371618       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:job-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:job-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.401370       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:namespace-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:namespace-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.424230       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:node-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:node-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+W0322 19:42:21.425879       1 logging.go:59] [core] [Channel #64 SubChannel #65] grpc: addrConn.createTransport failed to connect to {
+  "Addr": "127.0.0.1:2379",
+  "ServerName": "127.0.0.1",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "error reading server preface: read tcp 127.0.0.1:37582->127.0.0.1:2379: use of closed network connection"
+E0322 19:42:21.440566       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:persistent-volume-binder: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:persistent-volume-binder": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.454386       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:pod-garbage-collector: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:pod-garbage-collector": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.473227       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:replicaset-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:replicaset-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.498933       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:replication-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:replication-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.524451       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:resourcequota-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:resourcequota-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.549991       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:route-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:route-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.560240       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:service-account-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:service-account-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.608709       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:service-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:service-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+E0322 19:42:21.634662       1 storage_rbac.go:232] unable to reconcile clusterrole.rbac.authorization.k8s.io/system:controller:statefulset-controller: Get "https://localhost:8443/apis/rbac.authorization.k8s.io/v1/clusterroles/system:controller:statefulset-controller": dial tcp 127.0.0.1:8443: connect: connection refused
+
+* 
+* ==> kube-controller-manager [71d282741f2a] <==
+* I0323 00:26:05.728062       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="68.065µs"
+I0323 00:26:17.727020       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="61.569µs"
+I0323 00:31:21.731501       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="169.816µs"
+I0323 00:31:32.721753       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="96.651µs"
+I0323 00:36:43.710908       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="112.044µs"
+I0323 00:36:57.725714       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="93.753µs"
+I0323 00:42:02.712865       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="58.87µs"
+I0323 00:42:16.719158       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="97.051µs"
+I0323 00:47:28.719790       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="85.457µs"
+I0323 00:47:39.733780       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="109.545µs"
+I0323 00:52:54.715920       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="89.555µs"
+I0323 00:53:07.756219       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="85.257µs"
+I0323 00:58:18.715564       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="599.3µs"
+I0323 00:58:29.725874       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="141.629µs"
+I0323 01:03:38.717592       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="56.572µs"
+I0323 01:03:51.716153       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="76.762µs"
+I0323 01:08:59.726052       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="105.247µs"
+I0323 01:09:14.718982       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="89.355µs"
+I0323 01:14:19.802250       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="110.645µs"
+I0323 01:14:33.730718       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="65.567µs"
+I0323 01:19:40.715514       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="116.442µs"
+I0323 01:19:51.726964       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="61.769µs"
+I0323 01:24:56.721565       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="128.935µs"
+I0323 01:25:11.604612       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="63.268µs"
+I0323 01:30:28.732246       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="140.33µs"
+I0323 01:30:41.858083       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="100.15µs"
+I0323 01:35:51.728691       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="60.569µs"
+I0323 01:36:06.716895       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="99.75µs"
+I0323 01:41:13.720006       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="62.069µs"
+I0323 01:41:24.683792       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="70.265µs"
+I0323 01:46:33.723282       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="286.756µs"
+I0323 01:46:44.741769       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="130.335µs"
+I0323 01:51:59.724527       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="143.028µs"
+I0323 01:52:12.714645       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="56.271µs"
+I0323 01:57:19.742518       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="248.175µs"
+I0323 01:57:31.733166       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="4.170214ms"
+I0323 02:02:38.724666       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="71.664µs"
+I0323 02:02:52.715563       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="68.665µs"
+I0323 02:07:59.714096       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="58.77µs"
+I0323 02:08:12.794780       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="94.453µs"
+I0323 02:13:25.718108       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="155.523µs"
+I0323 02:13:38.715979       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="72.563µs"
+I0323 02:18:42.723299       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="95.553µs"
+I0323 02:18:57.745750       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="91.354µs"
+I0323 02:23:55.743544       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="171.414µs"
+I0323 02:24:06.721908       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="170.114µs"
+I0323 02:29:23.731002       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="63.268µs"
+I0323 02:29:38.730651       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="180.409µs"
+I0323 02:34:50.738053       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="73.063µs"
+I0323 02:35:03.775771       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="94.353µs"
+I0323 02:40:17.755417       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="222.389µs"
+I0323 02:40:32.198480       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="4.542128ms"
+I0323 02:45:50.716172       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="92.054µs"
+I0323 02:46:03.713957       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="92.054µs"
+I0323 02:51:15.759874       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="88.356µs"
+I0323 02:51:28.723815       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="167.616µs"
+I0323 02:56:43.729722       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="99.55µs"
+I0323 02:56:56.718617       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="66.966µs"
+I0323 03:02:05.735822       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="647.976µs"
+I0323 03:02:18.724595       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-57b4699859" duration="159.52µs"
+
+* 
+* ==> kube-controller-manager [bced628a00e6] <==
+* I0319 20:10:55.703741       1 event.go:307] "Event occurred" object="kube-system/coredns-5dd5756b68-8t66l" fieldPath="" kind="Pod" apiVersion="" type="Normal" reason="TaintManagerEviction" message="Cancelling deletion of Pod kube-system/coredns-5dd5756b68-8t66l"
+I0319 20:10:55.707354       1 event.go:307] "Event occurred" object="default/msvc-cursos-7f57dc7948-cjlm4" fieldPath="" kind="Pod" apiVersion="" type="Normal" reason="TaintManagerEviction" message="Cancelling deletion of Pod default/msvc-cursos-7f57dc7948-cjlm4"
+I0319 20:10:55.707574       1 event.go:307] "Event occurred" object="default/msvc-usuarios-54488794d7-tqrp4" fieldPath="" kind="Pod" apiVersion="" type="Normal" reason="TaintManagerEviction" message="Cancelling deletion of Pod default/msvc-usuarios-54488794d7-tqrp4"
+I0319 20:10:55.741049       1 event.go:307] "Event occurred" object="default/msvc-usuarios-54488794d7-zw8v6" fieldPath="" kind="Pod" apiVersion="" type="Normal" reason="TaintManagerEviction" message="Cancelling deletion of Pod default/msvc-usuarios-54488794d7-zw8v6"
+I0319 20:10:55.741325       1 event.go:307] "Event occurred" object="default/mysql8-f7997d846-nlfrj" fieldPath="" kind="Pod" apiVersion="" type="Normal" reason="TaintManagerEviction" message="Cancelling deletion of Pod default/mysql8-f7997d846-nlfrj"
+I0319 20:10:55.741606       1 event.go:307] "Event occurred" object="default/msvc-usuarios-54488794d7-nl8hs" fieldPath="" kind="Pod" apiVersion="" type="Normal" reason="TaintManagerEviction" message="Cancelling deletion of Pod default/msvc-usuarios-54488794d7-nl8hs"
+I0319 20:10:55.741693       1 event.go:307] "Event occurred" object="kube-system/storage-provisioner" fieldPath="" kind="Pod" apiVersion="" type="Normal" reason="TaintManagerEviction" message="Cancelling deletion of Pod kube-system/storage-provisioner"
+I0319 20:10:55.741775       1 event.go:307] "Event occurred" object="default/postgres-7c6b6fc567-jb5nr" fieldPath="" kind="Pod" apiVersion="" type="Normal" reason="TaintManagerEviction" message="Cancelling deletion of Pod default/postgres-7c6b6fc567-jb5nr"
+I0319 20:22:18.982269       1 event.go:307] "Event occurred" object="default/msvc-gateway" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set msvc-gateway-dc9b94b4d to 1"
+I0319 20:22:19.061913       1 event.go:307] "Event occurred" object="default/msvc-gateway-dc9b94b4d" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: msvc-gateway-dc9b94b4d-wxdg6"
+I0319 20:22:19.170338       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="186.434471ms"
+I0319 20:22:19.230864       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="60.294217ms"
+I0319 20:22:19.246493       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="12.461683ms"
+I0319 20:22:19.250656       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="111.911µs"
+I0319 20:22:19.422537       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="116.508µs"
+I0319 20:22:30.762210       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="88.060194ms"
+I0319 20:22:30.768633       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="6.013738ms"
+I0319 20:35:56.744512       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="18.59µs"
+I0319 20:38:12.428908       1 event.go:307] "Event occurred" object="default/msvc-gateway" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled up replica set msvc-gateway-dc9b94b4d to 1"
+I0319 20:38:12.449602       1 event.go:307] "Event occurred" object="default/msvc-gateway-dc9b94b4d" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulCreate" message="Created pod: msvc-gateway-dc9b94b4d-xp522"
+I0319 20:38:12.504180       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="95.631943ms"
+I0319 20:38:12.616624       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="112.06984ms"
+I0319 20:38:12.617969       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="1.039225ms"
+I0319 20:38:12.654178       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="139.823µs"
+I0319 20:38:24.485999       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="79.930225ms"
+I0319 20:38:24.489409       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="192.766µs"
+I0319 20:43:48.440947       1 event.go:307] "Event occurred" object="default/msvc-usuarios" fieldPath="" kind="Deployment" apiVersion="apps/v1" type="Normal" reason="ScalingReplicaSet" message="Scaled down replica set msvc-usuarios-54488794d7 to 2 from 3"
+I0319 20:43:48.693953       1 event.go:307] "Event occurred" object="default/msvc-usuarios-54488794d7" fieldPath="" kind="ReplicaSet" apiVersion="apps/v1" type="Normal" reason="SuccessfulDelete" message="Deleted pod: msvc-usuarios-54488794d7-nl8hs"
+I0319 20:43:49.709199       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-54488794d7" duration="1.258448336s"
+I0319 20:43:50.636970       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-54488794d7" duration="909.536159ms"
+I0319 20:43:50.664302       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-54488794d7" duration="23.580975ms"
+I0319 20:44:02.182868       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-54488794d7" duration="31.216803ms"
+I0319 20:44:02.895981       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-54488794d7" duration="407.429µs"
+I0319 20:44:02.902645       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-54488794d7" duration="124.717µs"
+I0320 03:40:37.746569       1 garbagecollector.go:818] "failed to discover preferred resources" error="the server has asked for the client to provide credentials"
+E0320 03:40:38.054399       1 resource_quota_controller.go:440] failed to discover resources: the server has asked for the client to provide credentials
+E0320 05:30:26.094391       1 resource_quota_controller.go:440] failed to discover resources: the server has asked for the client to provide credentials
+I0320 05:30:27.950792       1 garbagecollector.go:818] "failed to discover preferred resources" error="the server has asked for the client to provide credentials"
+E0320 07:29:56.456568       1 resource_quota_controller.go:440] failed to discover resources: the server has asked for the client to provide credentials
+I0320 07:30:03.975718       1 garbagecollector.go:818] "failed to discover preferred resources" error="the server has asked for the client to provide credentials"
+E0320 09:19:47.876919       1 resource_quota_controller.go:440] failed to discover resources: the server has asked for the client to provide credentials
+I0320 09:20:00.634481       1 garbagecollector.go:818] "failed to discover preferred resources" error="the server has asked for the client to provide credentials"
+E0320 10:21:36.059113       1 resource_quota_controller.go:440] failed to discover resources: the server has asked for the client to provide credentials
+I0320 10:21:46.801028       1 garbagecollector.go:818] "failed to discover preferred resources" error="the server has asked for the client to provide credentials"
+E0320 12:31:13.151591       1 resource_quota_controller.go:440] failed to discover resources: the server has asked for the client to provide credentials
+I0320 12:31:20.073423       1 garbagecollector.go:818] "failed to discover preferred resources" error="the server has asked for the client to provide credentials"
+I0320 13:09:40.616301       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/postgres-7c6b6fc567" duration="24.748518ms"
+I0320 13:09:40.616533       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-gateway-dc9b94b4d" duration="814.393µs"
+I0320 13:09:40.616646       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/mysql8-f76cd7858" duration="47.176µs"
+I0320 13:09:40.617034       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-cursos-7f57dc7948" duration="134.333µs"
+I0320 13:09:40.617302       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/msvc-usuarios-54488794d7" duration="85.757µs"
+I0320 13:09:40.619438       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/mysql8-7d68fb4b7" duration="850.974µs"
+I0320 13:09:40.621389       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/postgres-76678bf74c" duration="843.878µs"
+I0320 13:09:40.622487       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/mysql8-749c567645" duration="914.842µs"
+I0320 13:09:40.624144       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/postgres-78b4f5ccc5" duration="1.52004ms"
+I0320 13:09:40.625169       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="kube-system/coredns-5dd5756b68" duration="5.487654ms"
+I0320 13:09:40.625971       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/postgres-749d7cdc9d" duration="37.25796ms"
+I0320 13:09:40.627763       1 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="default/mysql8-f7997d846" duration="859.37µs"
+E0320 22:30:36.946007       1 resource_quota_controller.go:440] failed to discover resources: the server has asked for the client to provide credentials
+I0320 22:30:43.106919       1 garbagecollector.go:818] "failed to discover preferred resources" error="the server has asked for the client to provide credentials"
+
+* 
+* ==> kube-proxy [0b7339ef3d4a] <==
+* I0320 08:58:04.226718       1 trace.go:236] Trace[1747911944]: "iptables ChainExists" (20-Mar-2024 08:58:01.498) (total time: 2727ms):
+Trace[1747911944]: [2.727797255s] [2.727797255s] END
+I0320 09:00:37.903327       1 trace.go:236] Trace[1155751939]: "iptables ChainExists" (20-Mar-2024 09:00:31.193) (total time: 6708ms):
+Trace[1155751939]: [6.708948943s] [6.708948943s] END
+I0320 09:01:33.910662       1 trace.go:236] Trace[1945488093]: "iptables ChainExists" (20-Mar-2024 09:01:31.708) (total time: 2201ms):
+Trace[1945488093]: [2.201904146s] [2.201904146s] END
+I0320 09:04:03.886381       1 trace.go:236] Trace[159018729]: "iptables ChainExists" (20-Mar-2024 09:04:01.293) (total time: 2592ms):
+Trace[159018729]: [2.59250155s] [2.59250155s] END
+I0320 09:08:03.676055       1 trace.go:236] Trace[451017057]: "iptables ChainExists" (20-Mar-2024 09:08:01.516) (total time: 2157ms):
+Trace[451017057]: [2.157894157s] [2.157894157s] END
+I0320 09:10:33.264395       1 trace.go:236] Trace[31273912]: "iptables ChainExists" (20-Mar-2024 09:10:31.182) (total time: 2081ms):
+Trace[31273912]: [2.081527449s] [2.081527449s] END
+I0320 09:12:34.669951       1 trace.go:236] Trace[378509032]: "iptables ChainExists" (20-Mar-2024 09:12:31.126) (total time: 3543ms):
+Trace[378509032]: [3.543039892s] [3.543039892s] END
+I0320 09:13:03.376173       1 trace.go:236] Trace[1278177032]: "iptables ChainExists" (20-Mar-2024 09:13:01.159) (total time: 2215ms):
+Trace[1278177032]: [2.215847447s] [2.215847447s] END
+I0320 09:16:04.646620       1 trace.go:236] Trace[1218992421]: "iptables ChainExists" (20-Mar-2024 09:16:02.197) (total time: 2448ms):
+Trace[1218992421]: [2.448513558s] [2.448513558s] END
+I0320 09:19:03.452071       1 trace.go:236] Trace[412510046]: "iptables ChainExists" (20-Mar-2024 09:19:01.151) (total time: 2296ms):
+Trace[412510046]: [2.296563777s] [2.296563777s] END
+I0320 09:20:03.193451       1 trace.go:236] Trace[908949350]: "iptables ChainExists" (20-Mar-2024 09:20:01.120) (total time: 2071ms):
+Trace[908949350]: [2.071458516s] [2.071458516s] END
+I0320 09:20:34.247844       1 trace.go:236] Trace[1563854018]: "iptables ChainExists" (20-Mar-2024 09:20:31.276) (total time: 2971ms):
+Trace[1563854018]: [2.971155512s] [2.971155512s] END
+I0320 09:21:03.421453       1 trace.go:236] Trace[885497196]: "iptables ChainExists" (20-Mar-2024 09:21:01.364) (total time: 2056ms):
+Trace[885497196]: [2.056532257s] [2.056532257s] END
+I0320 09:23:33.326043       1 trace.go:236] Trace[2018748765]: "iptables ChainExists" (20-Mar-2024 09:23:31.153) (total time: 2140ms):
+Trace[2018748765]: [2.140672063s] [2.140672063s] END
+I0320 09:24:03.745400       1 trace.go:236] Trace[101499136]: "iptables ChainExists" (20-Mar-2024 09:24:01.108) (total time: 2636ms):
+Trace[101499136]: [2.636867998s] [2.636867998s] END
+I0320 09:26:34.196872       1 trace.go:236] Trace[90324210]: "iptables ChainExists" (20-Mar-2024 09:26:31.229) (total time: 2965ms):
+Trace[90324210]: [2.965462319s] [2.965462319s] END
+I0320 09:34:03.665493       1 trace.go:236] Trace[1107018313]: "iptables ChainExists" (20-Mar-2024 09:34:01.176) (total time: 2488ms):
+Trace[1107018313]: [2.488883374s] [2.488883374s] END
+I0320 09:37:33.256438       1 trace.go:236] Trace[1821536973]: "iptables ChainExists" (20-Mar-2024 09:37:31.242) (total time: 2013ms):
+Trace[1821536973]: [2.013139733s] [2.013139733s] END
+I0320 09:38:34.370540       1 trace.go:236] Trace[543785555]: "iptables ChainExists" (20-Mar-2024 09:38:31.341) (total time: 3028ms):
+Trace[543785555]: [3.028627064s] [3.028627064s] END
+I0320 09:44:34.369160       1 trace.go:236] Trace[1482657985]: "iptables ChainExists" (20-Mar-2024 09:44:31.372) (total time: 2996ms):
+Trace[1482657985]: [2.99614071s] [2.99614071s] END
+I0320 09:45:03.416995       1 trace.go:236] Trace[336365622]: "iptables ChainExists" (20-Mar-2024 09:45:01.163) (total time: 2241ms):
+Trace[336365622]: [2.241477568s] [2.241477568s] END
+I0320 09:46:38.360796       1 trace.go:236] Trace[454749968]: "iptables ChainExists" (20-Mar-2024 09:46:31.170) (total time: 7190ms):
+Trace[454749968]: [7.190192769s] [7.190192769s] END
+I0320 09:47:05.336603       1 trace.go:236] Trace[438869790]: "iptables ChainExists" (20-Mar-2024 09:47:01.123) (total time: 4212ms):
+Trace[438869790]: [4.21217468s] [4.21217468s] END
+I0320 09:48:03.867319       1 trace.go:236] Trace[1325578290]: "iptables ChainExists" (20-Mar-2024 09:48:01.297) (total time: 2569ms):
+Trace[1325578290]: [2.569333366s] [2.569333366s] END
+I0320 09:49:04.226291       1 trace.go:236] Trace[458865967]: "iptables ChainExists" (20-Mar-2024 09:49:01.317) (total time: 2907ms):
+Trace[458865967]: [2.907917674s] [2.907917674s] END
+I0320 09:50:33.738731       1 trace.go:236] Trace[215313786]: "iptables ChainExists" (20-Mar-2024 09:50:31.244) (total time: 2487ms):
+Trace[215313786]: [2.487130689s] [2.487130689s] END
+I0320 09:52:03.404171       1 trace.go:236] Trace[654210710]: "iptables ChainExists" (20-Mar-2024 09:52:01.146) (total time: 2023ms):
+Trace[654210710]: [2.023205745s] [2.023205745s] END
+I0320 11:15:19.610963       1 trace.go:236] Trace[1133662468]: "iptables ChainExists" (20-Mar-2024 11:15:17.177) (total time: 2432ms):
+Trace[1133662468]: [2.432729474s] [2.432729474s] END
+I0320 11:17:23.545210       1 trace.go:236] Trace[200249607]: "iptables ChainExists" (20-Mar-2024 11:17:18.720) (total time: 4823ms):
+Trace[200249607]: [4.823992894s] [4.823992894s] END
+I0320 22:03:11.150640       1 trace.go:236] Trace[1193004191]: "iptables ChainExists" (20-Mar-2024 22:03:08.273) (total time: 2847ms):
+Trace[1193004191]: [2.84701568s] [2.84701568s] END
+
+* 
+* ==> kube-proxy [adac68ccd970] <==
+* W0322 19:42:25.895857       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Service: Get "https://control-plane.minikube.internal:8443/api/v1/services?labelSelector=%!s(MISSING)ervice.kubernetes.io%!F(MISSING)headless%!C(MISSING)%!s(MISSING)ervice.kubernetes.io%!F(MISSING)service-proxy-name&resourceVersion=133045": dial tcp 10.211.55.2:8443: connect: connection refused
+E0322 19:42:25.896028       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://control-plane.minikube.internal:8443/api/v1/services?labelSelector=%!s(MISSING)ervice.kubernetes.io%!F(MISSING)headless%!C(MISSING)%!s(MISSING)ervice.kubernetes.io%!F(MISSING)service-proxy-name&resourceVersion=133045": dial tcp 10.211.55.2:8443: connect: connection refused
+I0322 19:45:11.168305       1 trace.go:236] Trace[1508548703]: "iptables ChainExists" (22-Mar-2024 19:44:20.526) (total time: 50641ms):
+Trace[1508548703]: [50.641091588s] [50.641091588s] END
+I0322 19:53:31.493314       1 trace.go:236] Trace[1166213728]: "iptables ChainExists" (22-Mar-2024 19:53:23.622) (total time: 7870ms):
+Trace[1166213728]: [7.870366548s] [7.870366548s] END
+I0322 19:54:23.131460       1 trace.go:236] Trace[929129934]: "iptables ChainExists" (22-Mar-2024 19:54:20.579) (total time: 2551ms):
+Trace[929129934]: [2.551617153s] [2.551617153s] END
+I0322 19:54:52.592903       1 trace.go:236] Trace[1566168899]: "iptables ChainExists" (22-Mar-2024 19:54:50.076) (total time: 2232ms):
+Trace[1566168899]: [2.232974655s] [2.232974655s] END
+I0322 19:55:23.660124       1 trace.go:236] Trace[1011682435]: "iptables ChainExists" (22-Mar-2024 19:55:20.109) (total time: 3550ms):
+Trace[1011682435]: [3.550018802s] [3.550018802s] END
+I0322 19:59:52.554868       1 trace.go:236] Trace[1173248304]: "iptables ChainExists" (22-Mar-2024 19:59:50.238) (total time: 2316ms):
+Trace[1173248304]: [2.316366038s] [2.316366038s] END
+I0322 20:00:22.617989       1 trace.go:236] Trace[879989721]: "iptables ChainExists" (22-Mar-2024 20:00:20.138) (total time: 2479ms):
+Trace[879989721]: [2.479637261s] [2.479637261s] END
+I0322 20:00:53.871123       1 trace.go:236] Trace[885737384]: "iptables ChainExists" (22-Mar-2024 20:00:50.159) (total time: 3680ms):
+Trace[885737384]: [3.68099758s] [3.68099758s] END
+I0322 20:01:54.877210       1 trace.go:236] Trace[894481386]: "iptables ChainExists" (22-Mar-2024 20:01:51.449) (total time: 2896ms):
+Trace[894481386]: [2.896479536s] [2.896479536s] END
+I0322 20:06:24.182113       1 trace.go:236] Trace[1493776577]: "iptables ChainExists" (22-Mar-2024 20:06:20.157) (total time: 4024ms):
+Trace[1493776577]: [4.024636475s] [4.024636475s] END
+I0322 20:09:54.026036       1 trace.go:236] Trace[927266380]: "iptables ChainExists" (22-Mar-2024 20:09:50.794) (total time: 3230ms):
+Trace[927266380]: [3.230055364s] [3.230055364s] END
+I0322 20:12:22.170842       1 trace.go:236] Trace[1753558879]: "iptables ChainExists" (22-Mar-2024 20:12:20.072) (total time: 2097ms):
+Trace[1753558879]: [2.09797079s] [2.09797079s] END
+I0322 20:13:52.208068       1 trace.go:236] Trace[1712276310]: "iptables ChainExists" (22-Mar-2024 20:13:50.061) (total time: 2142ms):
+Trace[1712276310]: [2.142801763s] [2.142801763s] END
+I0322 20:18:22.519766       1 trace.go:236] Trace[1600183770]: "iptables ChainExists" (22-Mar-2024 20:18:20.202) (total time: 2271ms):
+Trace[1600183770]: [2.271413625s] [2.271413625s] END
+I0322 21:18:36.595004       1 trace.go:236] Trace[1447357583]: "iptables ChainExists" (22-Mar-2024 21:18:31.811) (total time: 4648ms):
+Trace[1447357583]: [4.648124576s] [4.648124576s] END
+I0322 21:20:01.663661       1 trace.go:236] Trace[533975263]: "iptables ChainExists" (22-Mar-2024 21:19:52.918) (total time: 8529ms):
+Trace[533975263]: [8.529191671s] [8.529191671s] END
+I0322 21:22:44.981580       1 trace.go:236] Trace[2069748859]: "iptables ChainExists" (22-Mar-2024 21:22:40.884) (total time: 3496ms):
+Trace[2069748859]: [3.496829511s] [3.496829511s] END
+I0322 21:24:14.395992       1 trace.go:236] Trace[1965516192]: "iptables ChainExists" (22-Mar-2024 21:24:11.164) (total time: 3131ms):
+Trace[1965516192]: [3.131863285s] [3.131863285s] END
+I0322 21:28:14.240894       1 trace.go:236] Trace[170165221]: "iptables ChainExists" (22-Mar-2024 21:28:12.112) (total time: 2116ms):
+Trace[170165221]: [2.116353293s] [2.116353293s] END
+I0322 21:29:35.235059       1 trace.go:236] Trace[2016475858]: "iptables ChainExists" (22-Mar-2024 21:29:31.558) (total time: 3667ms):
+Trace[2016475858]: [3.66738699s] [3.66738699s] END
+I0322 21:31:16.288234       1 trace.go:236] Trace[49563142]: "iptables ChainExists" (22-Mar-2024 21:31:08.510) (total time: 7772ms):
+Trace[49563142]: [7.772427342s] [7.772427342s] END
+I0322 21:32:22.822665       1 trace.go:236] Trace[1183915406]: "iptables ChainExists" (22-Mar-2024 21:32:17.520) (total time: 5286ms):
+Trace[1183915406]: [5.286675139s] [5.286675139s] END
+I0322 21:33:44.500177       1 trace.go:236] Trace[707359045]: "iptables ChainExists" (22-Mar-2024 21:33:40.664) (total time: 3791ms):
+Trace[707359045]: [3.791436833s] [3.791436833s] END
+I0322 21:35:17.179354       1 trace.go:236] Trace[490775952]: "iptables ChainExists" (22-Mar-2024 21:35:11.436) (total time: 5687ms):
+Trace[490775952]: [5.68787494s] [5.68787494s] END
+I0322 21:35:25.607238       1 trace.go:236] Trace[1050392045]: "iptables save" (22-Mar-2024 21:35:23.180) (total time: 2409ms):
+Trace[1050392045]: [2.409467464s] [2.409467464s] END
+I0322 21:39:06.897552       1 trace.go:236] Trace[720582499]: "iptables ChainExists" (22-Mar-2024 21:39:02.117) (total time: 3950ms):
+Trace[720582499]: [3.950530246s] [3.950530246s] END
+I0322 21:41:04.543696       1 trace.go:236] Trace[1690954815]: "iptables ChainExists" (22-Mar-2024 21:40:51.588) (total time: 10768ms):
+Trace[1690954815]: [10.768771721s] [10.768771721s] END
+I0322 21:41:53.114756       1 trace.go:236] Trace[108425434]: "iptables ChainExists" (22-Mar-2024 21:41:50.154) (total time: 2959ms):
+Trace[108425434]: [2.95997787s] [2.95997787s] END
+I0322 23:19:24.063173       1 trace.go:236] Trace[2000742475]: "iptables ChainExists" (22-Mar-2024 23:19:20.123) (total time: 3832ms):
+Trace[2000742475]: [3.832253715s] [3.832253715s] END
+
+* 
+* ==> kube-scheduler [c28c8919082c] <==
+* W0322 19:44:50.160586       1 reflector.go:458] vendor/k8s.io/client-go/informers/factory.go:150: watch of *v1.StatefulSet ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W0322 19:44:53.806351       1 reflector.go:458] vendor/k8s.io/client-go/informers/factory.go:150: watch of *v1.PersistentVolumeClaim ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+I0322 19:44:56.100771       1 request.go:697] Waited for 2.041394692s due to client-side throttling, not priority and fairness, request: GET:https://10.211.55.2:8443/api/v1/pods?fieldSelector=status.phase%3DSucceeded%!C(MISSING)status.phase%3DFailed&resourceVersion=133238
+W0322 19:44:57.436957       1 reflector.go:458] vendor/k8s.io/client-go/informers/factory.go:150: watch of *v1.PersistentVolume ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W0322 19:44:57.587853       1 reflector.go:458] vendor/k8s.io/client-go/informers/factory.go:150: watch of *v1.ReplicaSet ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W0322 19:45:00.757920       1 reflector.go:458] vendor/k8s.io/client-go/informers/factory.go:150: watch of *v1.Node ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W0322 19:45:00.993043       1 reflector.go:458] pkg/server/dynamiccertificates/configmap_cafile_content.go:206: watch of *v1.ConfigMap ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W0322 19:45:01.374145       1 reflector.go:458] vendor/k8s.io/client-go/informers/factory.go:150: watch of *v1.StorageClass ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W0322 19:45:01.375613       1 reflector.go:458] vendor/k8s.io/client-go/informers/factory.go:150: watch of *v1.CSIStorageCapacity ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding
+W0322 19:45:03.825417       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Namespace: Get "https://10.211.55.2:8443/api/v1/namespaces?resourceVersion=133239": net/http: TLS handshake timeout
+I0322 19:45:03.856378       1 trace.go:236] Trace[782686591]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:51.398) (total time: 12439ms):
+Trace[782686591]: ---"Objects listed" error:Get "https://10.211.55.2:8443/api/v1/namespaces?resourceVersion=133239": net/http: TLS handshake timeout 12426ms (19:45:03.824)
+Trace[782686591]: [12.439976301s] [12.439976301s] END
+E0322 19:45:03.856567       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Namespace: failed to list *v1.Namespace: Get "https://10.211.55.2:8443/api/v1/namespaces?resourceVersion=133239": net/http: TLS handshake timeout
+W0322 19:45:04.524640       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.ReplicationController: Get "https://10.211.55.2:8443/api/v1/replicationcontrollers?resourceVersion=133237": net/http: TLS handshake timeout
+I0322 19:45:04.534856       1 trace.go:236] Trace[301843671]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:53.304) (total time: 11215ms):
+Trace[301843671]: ---"Objects listed" error:Get "https://10.211.55.2:8443/api/v1/replicationcontrollers?resourceVersion=133237": net/http: TLS handshake timeout 11205ms (19:45:04.524)
+Trace[301843671]: [11.215715237s] [11.215715237s] END
+E0322 19:45:04.535079       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.ReplicationController: failed to list *v1.ReplicationController: Get "https://10.211.55.2:8443/api/v1/replicationcontrollers?resourceVersion=133237": net/http: TLS handshake timeout
+W0322 19:45:04.633020       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.PodDisruptionBudget: Get "https://10.211.55.2:8443/apis/policy/v1/poddisruptionbudgets?resourceVersion=133238": net/http: TLS handshake timeout
+I0322 19:45:04.633298       1 trace.go:236] Trace[565172144]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:53.153) (total time: 11479ms):
+Trace[565172144]: ---"Objects listed" error:Get "https://10.211.55.2:8443/apis/policy/v1/poddisruptionbudgets?resourceVersion=133238": net/http: TLS handshake timeout 11478ms (19:45:04.632)
+Trace[565172144]: [11.479190533s] [11.479190533s] END
+E0322 19:45:04.633418       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.PodDisruptionBudget: failed to list *v1.PodDisruptionBudget: Get "https://10.211.55.2:8443/apis/policy/v1/poddisruptionbudgets?resourceVersion=133238": net/http: TLS handshake timeout
+W0322 19:45:05.466463       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Service: Get "https://10.211.55.2:8443/api/v1/services?resourceVersion=133233": net/http: TLS handshake timeout
+I0322 19:45:05.467029       1 trace.go:236] Trace[1759474940]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:49.590) (total time: 15876ms):
+Trace[1759474940]: ---"Objects listed" error:Get "https://10.211.55.2:8443/api/v1/services?resourceVersion=133233": net/http: TLS handshake timeout 15875ms (19:45:05.466)
+Trace[1759474940]: [15.876006626s] [15.876006626s] END
+E0322 19:45:05.467590       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://10.211.55.2:8443/api/v1/services?resourceVersion=133233": net/http: TLS handshake timeout
+W0322 19:45:06.314725       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.StatefulSet: Get "https://10.211.55.2:8443/apis/apps/v1/statefulsets?resourceVersion=133238": net/http: TLS handshake timeout
+I0322 19:45:06.315936       1 trace.go:236] Trace[1017724769]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:53.891) (total time: 12423ms):
+Trace[1017724769]: ---"Objects listed" error:Get "https://10.211.55.2:8443/apis/apps/v1/statefulsets?resourceVersion=133238": net/http: TLS handshake timeout 12422ms (19:45:06.305)
+Trace[1017724769]: [12.423947219s] [12.423947219s] END
+E0322 19:45:06.316876       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.StatefulSet: failed to list *v1.StatefulSet: Get "https://10.211.55.2:8443/apis/apps/v1/statefulsets?resourceVersion=133238": net/http: TLS handshake timeout
+W0322 19:45:07.544140       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.CSINode: Get "https://10.211.55.2:8443/apis/storage.k8s.io/v1/csinodes?resourceVersion=133223": net/http: TLS handshake timeout
+I0322 19:45:07.544880       1 trace.go:236] Trace[652419549]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:53.323) (total time: 14221ms):
+Trace[652419549]: ---"Objects listed" error:Get "https://10.211.55.2:8443/apis/storage.k8s.io/v1/csinodes?resourceVersion=133223": net/http: TLS handshake timeout 14220ms (19:45:07.543)
+Trace[652419549]: [14.221598443s] [14.221598443s] END
+E0322 19:45:07.544986       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.CSINode: failed to list *v1.CSINode: Get "https://10.211.55.2:8443/apis/storage.k8s.io/v1/csinodes?resourceVersion=133223": net/http: TLS handshake timeout
+I0322 19:45:11.715342       1 trace.go:236] Trace[1880558910]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:55.361) (total time: 16353ms):
+Trace[1880558910]: ---"Objects listed" error:<nil> 16341ms (19:45:11.702)
+Trace[1880558910]: [16.353408206s] [16.353408206s] END
+I0322 19:45:12.340964       1 trace.go:236] Trace[1990563564]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:51.397) (total time: 20943ms):
+Trace[1990563564]: ---"Objects listed" error:<nil> 20942ms (19:45:12.340)
+Trace[1990563564]: [20.943451836s] [20.943451836s] END
+I0322 19:45:12.393203       1 trace.go:236] Trace[1530137823]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:59.476) (total time: 12916ms):
+Trace[1530137823]: ---"Objects listed" error:<nil> 12915ms (19:45:12.392)
+Trace[1530137823]: [12.916327905s] [12.916327905s] END
+I0322 19:45:12.418557       1 trace.go:236] Trace[828898567]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:45:02.097) (total time: 10320ms):
+Trace[828898567]: ---"Objects listed" error:<nil> 10320ms (19:45:12.418)
+Trace[828898567]: [10.320478679s] [10.320478679s] END
+I0322 19:45:12.623701       1 trace.go:236] Trace[742516153]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:44:55.782) (total time: 16840ms):
+Trace[742516153]: ---"Objects listed" error:<nil> 16840ms (19:45:12.623)
+Trace[742516153]: [16.840652762s] [16.840652762s] END
+I0322 19:45:13.566701       1 trace.go:236] Trace[748457986]: "Reflector ListAndWatch" name:vendor/k8s.io/client-go/informers/factory.go:150 (22-Mar-2024 19:45:01.376) (total time: 12190ms):
+Trace[748457986]: ---"Objects listed" error:<nil> 12190ms (19:45:13.566)
+Trace[748457986]: [12.190333184s] [12.190333184s] END
+I0322 19:45:14.010364       1 trace.go:236] Trace[339408788]: "Reflector ListAndWatch" name:pkg/server/dynamiccertificates/configmap_cafile_content.go:206 (22-Mar-2024 19:45:02.114) (total time: 11895ms):
+Trace[339408788]: ---"Objects listed" error:<nil> 11895ms (19:45:14.010)
+Trace[339408788]: [11.895258195s] [11.895258195s] END
+
+* 
+* ==> kube-scheduler [eae1e72fd89b] <==
+* I0318 16:12:13.428902       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I0318 16:12:13.429606       1 secure_serving.go:213] Serving securely on 127.0.0.1:10259
+I0318 16:12:13.429673       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+W0318 16:12:13.443121       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.StorageClass: storageclasses.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "storageclasses" in API group "storage.k8s.io" at the cluster scope
+E0318 16:12:13.443200       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.StorageClass: failed to list *v1.StorageClass: storageclasses.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "storageclasses" in API group "storage.k8s.io" at the cluster scope
+W0318 16:12:13.444507       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.StatefulSet: statefulsets.apps is forbidden: User "system:kube-scheduler" cannot list resource "statefulsets" in API group "apps" at the cluster scope
+E0318 16:12:13.444615       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.StatefulSet: failed to list *v1.StatefulSet: statefulsets.apps is forbidden: User "system:kube-scheduler" cannot list resource "statefulsets" in API group "apps" at the cluster scope
+W0318 16:12:13.445123       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Namespace: namespaces is forbidden: User "system:kube-scheduler" cannot list resource "namespaces" in API group "" at the cluster scope
+E0318 16:12:13.445188       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Namespace: failed to list *v1.Namespace: namespaces is forbidden: User "system:kube-scheduler" cannot list resource "namespaces" in API group "" at the cluster scope
+W0318 16:12:13.445279       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Pod: pods is forbidden: User "system:kube-scheduler" cannot list resource "pods" in API group "" at the cluster scope
+E0318 16:12:13.445291       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Pod: failed to list *v1.Pod: pods is forbidden: User "system:kube-scheduler" cannot list resource "pods" in API group "" at the cluster scope
+W0318 16:12:13.445422       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.CSIStorageCapacity: csistoragecapacities.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csistoragecapacities" in API group "storage.k8s.io" at the cluster scope
+E0318 16:12:13.445435       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.CSIStorageCapacity: failed to list *v1.CSIStorageCapacity: csistoragecapacities.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csistoragecapacities" in API group "storage.k8s.io" at the cluster scope
+W0318 16:12:13.445893       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.PodDisruptionBudget: poddisruptionbudgets.policy is forbidden: User "system:kube-scheduler" cannot list resource "poddisruptionbudgets" in API group "policy" at the cluster scope
+E0318 16:12:13.445933       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.PodDisruptionBudget: failed to list *v1.PodDisruptionBudget: poddisruptionbudgets.policy is forbidden: User "system:kube-scheduler" cannot list resource "poddisruptionbudgets" in API group "policy" at the cluster scope
+W0318 16:12:13.446864       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.CSINode: csinodes.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csinodes" in API group "storage.k8s.io" at the cluster scope
+E0318 16:12:13.446911       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.CSINode: failed to list *v1.CSINode: csinodes.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csinodes" in API group "storage.k8s.io" at the cluster scope
+W0318 16:12:13.447214       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.CSIDriver: csidrivers.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csidrivers" in API group "storage.k8s.io" at the cluster scope
+E0318 16:12:13.447291       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.CSIDriver: failed to list *v1.CSIDriver: csidrivers.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csidrivers" in API group "storage.k8s.io" at the cluster scope
+W0318 16:12:13.447308       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.PersistentVolume: persistentvolumes is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumes" in API group "" at the cluster scope
+E0318 16:12:13.447315       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.PersistentVolume: failed to list *v1.PersistentVolume: persistentvolumes is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumes" in API group "" at the cluster scope
+W0318 16:12:13.447611       1 reflector.go:535] pkg/server/dynamiccertificates/configmap_cafile_content.go:206: failed to list *v1.ConfigMap: configmaps "extension-apiserver-authentication" is forbidden: User "system:kube-scheduler" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
+E0318 16:12:13.447654       1 reflector.go:147] pkg/server/dynamiccertificates/configmap_cafile_content.go:206: Failed to watch *v1.ConfigMap: failed to list *v1.ConfigMap: configmaps "extension-apiserver-authentication" is forbidden: User "system:kube-scheduler" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
+W0318 16:12:13.448051       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Node: nodes is forbidden: User "system:kube-scheduler" cannot list resource "nodes" in API group "" at the cluster scope
+E0318 16:12:13.448151       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Node: failed to list *v1.Node: nodes is forbidden: User "system:kube-scheduler" cannot list resource "nodes" in API group "" at the cluster scope
+W0318 16:12:13.449009       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.ReplicaSet: replicasets.apps is forbidden: User "system:kube-scheduler" cannot list resource "replicasets" in API group "apps" at the cluster scope
+E0318 16:12:13.449049       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.ReplicaSet: failed to list *v1.ReplicaSet: replicasets.apps is forbidden: User "system:kube-scheduler" cannot list resource "replicasets" in API group "apps" at the cluster scope
+W0318 16:12:13.449401       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.PersistentVolumeClaim: persistentvolumeclaims is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumeclaims" in API group "" at the cluster scope
+E0318 16:12:13.449480       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.PersistentVolumeClaim: failed to list *v1.PersistentVolumeClaim: persistentvolumeclaims is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumeclaims" in API group "" at the cluster scope
+W0318 16:12:13.451762       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.ReplicationController: replicationcontrollers is forbidden: User "system:kube-scheduler" cannot list resource "replicationcontrollers" in API group "" at the cluster scope
+E0318 16:12:13.451808       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.ReplicationController: failed to list *v1.ReplicationController: replicationcontrollers is forbidden: User "system:kube-scheduler" cannot list resource "replicationcontrollers" in API group "" at the cluster scope
+W0318 16:12:13.452107       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Service: services is forbidden: User "system:kube-scheduler" cannot list resource "services" in API group "" at the cluster scope
+E0318 16:12:13.452150       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Service: failed to list *v1.Service: services is forbidden: User "system:kube-scheduler" cannot list resource "services" in API group "" at the cluster scope
+W0318 16:12:14.313688       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.PersistentVolume: persistentvolumes is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumes" in API group "" at the cluster scope
+E0318 16:12:14.313887       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.PersistentVolume: failed to list *v1.PersistentVolume: persistentvolumes is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumes" in API group "" at the cluster scope
+W0318 16:12:14.400291       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.CSIStorageCapacity: csistoragecapacities.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csistoragecapacities" in API group "storage.k8s.io" at the cluster scope
+E0318 16:12:14.400317       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.CSIStorageCapacity: failed to list *v1.CSIStorageCapacity: csistoragecapacities.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csistoragecapacities" in API group "storage.k8s.io" at the cluster scope
+W0318 16:12:14.424192       1 reflector.go:535] pkg/server/dynamiccertificates/configmap_cafile_content.go:206: failed to list *v1.ConfigMap: configmaps "extension-apiserver-authentication" is forbidden: User "system:kube-scheduler" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
+E0318 16:12:14.424730       1 reflector.go:147] pkg/server/dynamiccertificates/configmap_cafile_content.go:206: Failed to watch *v1.ConfigMap: failed to list *v1.ConfigMap: configmaps "extension-apiserver-authentication" is forbidden: User "system:kube-scheduler" cannot list resource "configmaps" in API group "" in the namespace "kube-system"
+W0318 16:12:14.474159       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.StatefulSet: statefulsets.apps is forbidden: User "system:kube-scheduler" cannot list resource "statefulsets" in API group "apps" at the cluster scope
+E0318 16:12:14.474861       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.StatefulSet: failed to list *v1.StatefulSet: statefulsets.apps is forbidden: User "system:kube-scheduler" cannot list resource "statefulsets" in API group "apps" at the cluster scope
+W0318 16:12:14.475917       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Node: nodes is forbidden: User "system:kube-scheduler" cannot list resource "nodes" in API group "" at the cluster scope
+E0318 16:12:14.476173       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Node: failed to list *v1.Node: nodes is forbidden: User "system:kube-scheduler" cannot list resource "nodes" in API group "" at the cluster scope
+W0318 16:12:14.490923       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.ReplicationController: replicationcontrollers is forbidden: User "system:kube-scheduler" cannot list resource "replicationcontrollers" in API group "" at the cluster scope
+E0318 16:12:14.491266       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.ReplicationController: failed to list *v1.ReplicationController: replicationcontrollers is forbidden: User "system:kube-scheduler" cannot list resource "replicationcontrollers" in API group "" at the cluster scope
+W0318 16:12:14.505043       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.StorageClass: storageclasses.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "storageclasses" in API group "storage.k8s.io" at the cluster scope
+E0318 16:12:14.505759       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.StorageClass: failed to list *v1.StorageClass: storageclasses.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "storageclasses" in API group "storage.k8s.io" at the cluster scope
+W0318 16:12:14.578870       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.ReplicaSet: replicasets.apps is forbidden: User "system:kube-scheduler" cannot list resource "replicasets" in API group "apps" at the cluster scope
+E0318 16:12:14.578927       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.ReplicaSet: failed to list *v1.ReplicaSet: replicasets.apps is forbidden: User "system:kube-scheduler" cannot list resource "replicasets" in API group "apps" at the cluster scope
+W0318 16:12:14.621895       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.PersistentVolumeClaim: persistentvolumeclaims is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumeclaims" in API group "" at the cluster scope
+E0318 16:12:14.621944       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.PersistentVolumeClaim: failed to list *v1.PersistentVolumeClaim: persistentvolumeclaims is forbidden: User "system:kube-scheduler" cannot list resource "persistentvolumeclaims" in API group "" at the cluster scope
+W0318 16:12:14.627412       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Service: services is forbidden: User "system:kube-scheduler" cannot list resource "services" in API group "" at the cluster scope
+E0318 16:12:14.627503       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Service: failed to list *v1.Service: services is forbidden: User "system:kube-scheduler" cannot list resource "services" in API group "" at the cluster scope
+W0318 16:12:14.629196       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.Namespace: namespaces is forbidden: User "system:kube-scheduler" cannot list resource "namespaces" in API group "" at the cluster scope
+E0318 16:12:14.629272       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.Namespace: failed to list *v1.Namespace: namespaces is forbidden: User "system:kube-scheduler" cannot list resource "namespaces" in API group "" at the cluster scope
+W0318 16:12:14.631837       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.PodDisruptionBudget: poddisruptionbudgets.policy is forbidden: User "system:kube-scheduler" cannot list resource "poddisruptionbudgets" in API group "policy" at the cluster scope
+E0318 16:12:14.631887       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.PodDisruptionBudget: failed to list *v1.PodDisruptionBudget: poddisruptionbudgets.policy is forbidden: User "system:kube-scheduler" cannot list resource "poddisruptionbudgets" in API group "policy" at the cluster scope
+W0318 16:12:14.680098       1 reflector.go:535] vendor/k8s.io/client-go/informers/factory.go:150: failed to list *v1.CSIDriver: csidrivers.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csidrivers" in API group "storage.k8s.io" at the cluster scope
+E0318 16:12:14.680121       1 reflector.go:147] vendor/k8s.io/client-go/informers/factory.go:150: Failed to watch *v1.CSIDriver: failed to list *v1.CSIDriver: csidrivers.storage.k8s.io is forbidden: User "system:kube-scheduler" cannot list resource "csidrivers" in API group "storage.k8s.io" at the cluster scope
+I0318 16:12:16.529881       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+
+* 
+* ==> kubelet <==
+* -- Journal begins at Mon 2024-03-25 18:35:05 UTC, ends at Mon 2024-03-25 18:40:00 UTC. --
+-- No entries --
+
+* 
+* ==> storage-provisioner [16263b88e267] <==
+* I0322 21:32:30.421274       1 storage_provisioner.go:116] Initializing the minikube storage provisioner...
+I0322 21:32:31.224702       1 storage_provisioner.go:141] Storage provisioner initialized, now starting service!
+I0322 21:32:31.250681       1 leaderelection.go:243] attempting to acquire leader lease kube-system/k8s.io-minikube-hostpath...
+I0322 21:32:49.948615       1 leaderelection.go:253] successfully acquired lease kube-system/k8s.io-minikube-hostpath
+I0322 21:32:49.988720       1 controller.go:835] Starting provisioner controller k8s.io/minikube-hostpath_minikube_3dfba391-42c6-42eb-8f36-003928e95388!
+I0322 21:32:49.994158       1 event.go:282] Event(v1.ObjectReference{Kind:"Endpoints", Namespace:"kube-system", Name:"k8s.io-minikube-hostpath", UID:"cffb310f-4b0a-4db1-86fa-02abf06336a8", APIVersion:"v1", ResourceVersion:"137831", FieldPath:""}): type: 'Normal' reason: 'LeaderElection' minikube_3dfba391-42c6-42eb-8f36-003928e95388 became leader
+I0322 21:32:53.472012       1 controller.go:884] Started provisioner controller k8s.io/minikube-hostpath_minikube_3dfba391-42c6-42eb-8f36-003928e95388!
+I0322 21:39:48.549739       1 request.go:655] Throttling request took 1.111777433s, request: GET:https://10.96.0.1:443/api/v1/namespaces/kube-system/endpoints/k8s.io-minikube-hostpath
+
