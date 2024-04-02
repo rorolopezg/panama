@@ -4,6 +4,8 @@ import cl.kopernicus.springcloud.msvc.catalogs.models.entities.MapTable;
 import cl.kopernicus.springcloud.msvc.catalogs.repositories.CatalogRepository;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,6 +27,12 @@ public class ApiCatalogsImpl implements ApiCatalogsService {
         return repository.findAll(pageable);
     }
     */
+
+    @Override
+    @Transactional(readOnly = true)
+    public Page<MapTable> findAll(Pageable pageable) {
+        return repository.findAll(pageable);
+    }
 
     @Override
     @Transactional(readOnly = true)

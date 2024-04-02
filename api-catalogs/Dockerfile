@@ -27,7 +27,7 @@ RUN mkdir ./logs
 ARG MSVC_NAME=api-catalogs
 ARG TARGET_FOLDER=/app/$MSVC_NAME/target
 COPY --from=builder $TARGET_FOLDER/api-catalogs-0.0.1-SNAPSHOT.jar .
-ARG PORT_APP=8001
+ARG PORT_APP=8003
 ENV PORT $PORT_APP
 EXPOSE $PORT
 #ENTRYPOINT ["java", "-jar", "api-catalogs-0.0.1-SNAPSHOT.jar"]
