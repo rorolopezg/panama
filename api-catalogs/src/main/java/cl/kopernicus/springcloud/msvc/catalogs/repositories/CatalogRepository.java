@@ -32,7 +32,7 @@ public interface CatalogRepository extends JpaRepository<MapTable, Long> {
     );
 
     /* Obtiene mapeos específicos de un catálogo, sistema B, código B y sistema A */
-    @Query("select mt from MapTable mt where mt.mappingType = ?1 and mt.systemB = ?2 and mt.systemA = ?3 and (mt.codeB = ?4)")
+    @Query("select mt from MapTable mt where mt.mappingType = ?1 and mt.systemB = ?2 and mt.systemA = ?3 and mt.codeB = ?4")
     Optional<List<MapTable>> findByBtoA(
             String mappingType,
             String systemB,
@@ -53,14 +53,27 @@ public interface CatalogRepository extends JpaRepository<MapTable, Long> {
     );
 
     @Query(
-            "select mt from MapTable mt where mt.mappingType = ?1 and mt.systemA = ?2 and mt.systemB = ?3 and (mt.codeA = ?4)" +
+            "select mt from MapTable mt where mt.mappingType = ?1 and mt.systemA = ?2 and mt.systemB = ?3 and (mt.codeA = ?4 OR mt.codeB = ?4)" +
             "union " +
-            "select mt from MapTable mt where mt.mappingType = ?1 and mt.systemA = ?2 and mt.systemB = ?3 and (mt.codeB = ?4)"
+            "select mt from MapTable mt where mt.mappingType = ?1 and mt.systemB = ?2 and mt.systemA = ?3 and (mt.codeA = ?4 OR mt.codeB = ?4)"
     )
     Optional<List<MapTable>> findAllMapCoincidences(
             String mappingType,
             String systemA,
             String systemB,
             String code
+    );
+
+    @Query(
+            "select mt from MapTable mt where mt.mappingType = ?1 and mt.systemA = ?2 and mt.systemB = ?3 and (mt.codeA in (?4) OR mt.codeB in (?4))" +
+            "union " +
+            "select mt from MapTable mt where mt.mappingType = ?1 and mt.systemB = ?2 and mt.systemA = ?3 and (mt.codeA in (?4) OR mt.codeB in (?4))"
+    )
+    Page<MapTable> findAllMapCoincidences(
+            String mappingType,
+            String systemA,
+            String systemB,
+            List<String> codes,
+            Pageable pageable
     );
 }

@@ -18,4 +18,12 @@ public interface ApiCatalogsService {
     Page<MapTable> findByBtoA(String mappingType, String systemB, String systemA, List<String> codes, Pageable pageable);
 
     Optional<List<MapTable>> findAllMapCoincidences(String mappingType,String systemA, String systemB, String code);
+
+    Page<MapTable> findAllMapCoincidences(
+            String mappingType,
+            String systemA,
+            String systemB,
+            List<String> codes,
+            Pageable pageable
+    );
 }

@@ -30,10 +30,6 @@ public class ApiCatalogsServiceImpl implements ApiCatalogsService {
     @Transactional(readOnly = true)
     public Optional<List<MapTable>> findByAtoB(
             String mappingType, String systemA, String systemB, String codeA) {
-        String message = MessageFormat
-                .format("mappingType: ''{0}'', systemA: ''{1}'', codeA: ''{2}'', systemB: ''{3}''",
-                        mappingType, systemA, codeA, systemB);
-        log.info(message);
         return repository.findByAtoB(mappingType, systemA, systemB, codeA);
     }
 
@@ -47,10 +43,6 @@ public class ApiCatalogsServiceImpl implements ApiCatalogsService {
     @Transactional(readOnly = true)
     public Optional<List<MapTable>> findByBtoA(
             String mappingType, String systemB, String systemA, String codeB) {
-        String message = MessageFormat
-                .format("mappingType: ''{0}'', systemB: ''{1}'', codeB: ''{2}'', systemA: ''{3}''",
-                        mappingType, systemB, codeB, systemA);
-        log.info(message);
         return repository.findByBtoA(mappingType, systemB, systemA, codeB );
     }
 
@@ -64,10 +56,11 @@ public class ApiCatalogsServiceImpl implements ApiCatalogsService {
     @Transactional(readOnly = true)
     public Optional<List<MapTable>> findAllMapCoincidences(
             String mappingType, String systemA, String systemB, String code) {
-        String message = MessageFormat
-                .format("mappingType: ''{0}'', systemA: ''{1}'', code: ''{2}'', systemB: ''{3}''",
-                        mappingType, systemA, code, systemB);
-        log.info(message);
         return repository.findAllMapCoincidences(mappingType, systemA, systemB, code);
+    }
+
+    @Override
+    public Page<MapTable> findAllMapCoincidences(String mappingType, String systemA, String systemB, List<String> codes, Pageable pageable) {
+        return repository.findAllMapCoincidences(mappingType, systemA, systemB, codes, pageable);
     }
 }
