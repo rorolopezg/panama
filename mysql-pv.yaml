@@ -8,6 +8,7 @@ spec:
   volumeMode: Filesystem
   #For minikube: storageClassName: standard
   #For AWS:
+<<<<<<< HEAD
   storageClassName: standard
   accessModes:
     - ReadWriteOnce
@@ -15,6 +16,15 @@ spec:
   #csi:
   #  driver: efs.csi.aws.com
   #  volumeHandle: fs-0c99434453833947c
+=======
+  storageClassName: "standard"
+  accessModes:
+    - ReadWriteOnce
+    #- ReadWriteMany
+ # csi:
+ #  driver: efs.csi.aws.com
+ #   volumeHandle: fs-0c99434453833947c
+>>>>>>> yendry
   hostPath:
     path: /var/lib/mysql
     type: DirectoryOrCreate
