@@ -10,6 +10,12 @@ import java.util.Optional;
 public interface ApiCatalogsService {
     //Page<Usuario> listar(Pageable pageable);
     Page<MapTable> findAll(Pageable pageable);
-    Optional<List<MapTable>> findBySystemA(String mappingType,String systemA, String codeA, String SystemB);
-    Optional<List<MapTable>> findBySystemB(String mappingType,String systemB, String bCode, String SystemA);
+    Optional<List<MapTable>> findByAtoB(String mappingType, String systemA, String systemB, String codeA);
+
+    Page<MapTable> findByAtoB(String mappingType, String systemA, String systemB, List<String> codes, Pageable pageable);
+    Optional<List<MapTable>> findByBtoA(String mappingType, String systemB, String systemA, String bCode);
+
+    Page<MapTable> findByBtoA(String mappingType, String systemB, String systemA, List<String> codes, Pageable pageable);
+
+    Optional<List<MapTable>> findAllMapCoincidences(String mappingType,String systemA, String systemB, String code);
 }
