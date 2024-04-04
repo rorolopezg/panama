@@ -1,27 +1,27 @@
-package cl.kopernicus.springcloud.msvc.catalogs.models.mappings;
+package cl.kopernicus.springcloud.msvc.catalogs.models.dto.mappings;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MappingObject implements Serializable {
+public class MappingObjectDTO implements Serializable {
     private Long id;
     private String mappingType;
 
-    private List<MapSystem> mappings;
+    private List<MapSystemDTO> mappings;
 
-    public MappingObject() {
+    public MappingObjectDTO() {
         super();
         mappings = new ArrayList<>();
     }
 
-    public MappingObject(MapSystem systemA, MapSystem systemB) {
+    public MappingObjectDTO(MapSystemDTO systemA, MapSystemDTO systemB) {
         this();
         mappings.add(systemA);
         mappings.add(systemB);
     }
 
-    public MappingObject(Long id, String mappingType, MapSystem systemA, MapSystem systemB) {
+    public MappingObjectDTO(Long id, String mappingType, MapSystemDTO systemA, MapSystemDTO systemB) {
         this(systemA, systemB);
         this.id = id;
         this.mappingType = mappingType;
@@ -43,11 +43,11 @@ public class MappingObject implements Serializable {
         this.mappingType = mappingType;
     }
 
-    public List<MapSystem> getMappings() {
+    public List<MapSystemDTO> getMappings() {
         return mappings;
     }
 
-    public void setMappings(List<MapSystem> mappings) {
+    public void setMappings(List<MapSystemDTO> mappings) {
         this.mappings = mappings;
     }
 }

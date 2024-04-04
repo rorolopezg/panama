@@ -1,24 +1,27 @@
-package cl.kopernicus.springcloud.msvc.catalogs.models.mappings;
+package cl.kopernicus.springcloud.msvc.catalogs.models.dto.mappings;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-public class MapSystem implements Serializable {
+public class MapSystemDTO implements Serializable {
     private String systemName;
     private String systemType;
     private String code;
     private String value;
 
-    public MapSystem() {
+    private String positionType;
+
+    public MapSystemDTO() {
         super();
     }
 
-    public MapSystem(String systemName, String systemType, String code, String value) {
+    public MapSystemDTO(String systemName, String systemType, String code, String value, String positionType) {
         this();
         this.systemName = systemName;
         this.systemType = systemType;
         this.code = code;
         this.value = value;
+        this.positionType = positionType;
     }
 
     public String getSystemName() {
@@ -53,11 +56,19 @@ public class MapSystem implements Serializable {
         this.value = value;
     }
 
+    public String getPositionType() {
+        return positionType;
+    }
+
+    public void setPositionType(String positionType) {
+        this.positionType = positionType;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MapSystem mapSystem = (MapSystem) o;
+        MapSystemDTO mapSystem = (MapSystemDTO) o;
         return Objects.equals(systemName, mapSystem.systemName) && Objects.equals(systemType, mapSystem.systemType) && Objects.equals(code, mapSystem.code) && Objects.equals(value, mapSystem.value);
     }
 

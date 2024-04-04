@@ -21,7 +21,7 @@ FROM eclipse-temurin:21.0.2_13-jdk-alpine
 ARG MSVC_NAME
 WORKDIR /app
 RUN mkdir ./logs
-ARG MSVC_NAME=api-catalogs
+#ARG MSVC_NAME=api-catalogs
 ARG TARGET_FOLDER=/app/$MSVC_NAME/target
 COPY --from=builder $TARGET_FOLDER/api-catalogs-0.0.1-SNAPSHOT.jar .
 ARG PORT_APP=8003
