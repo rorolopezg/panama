@@ -111,6 +111,7 @@
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 
+		<!-- Logging with micrometer. See: https://medium.com/javarevisited/tracing-in-spring-boot3-097205dc08f4 -->
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-tracing-bridge-brave</artifactId>

@@ -84,7 +84,7 @@ public class ApiCatalogsController {
      * @see MapTable
      */
     @GetMapping("/api/mappings")
-    public ResponseEntity<?> findMap(
+    public ResponseEntity<?> findMappings(
             @RequestHeader Map<String, String> headers,
             @RequestHeader(name = "x-organization-id") String xOrganizationId,
             @RequestHeader(name = "x-organization-type") String xOrganizationType,
