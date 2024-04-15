@@ -1,5 +1,6 @@
 package tech.kopernicus.data.specification.example.dataspecexample.controllers;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,6 +66,11 @@ public class OfferApiController {
     @GetMapping("people2")
     public ResponseEntity<List<People>> getPeoplez2() {
         return ResponseEntity.ok(peopleService.executeProcedure());
+    }
+
+    @GetMapping("people3")
+    public void getPeoplez3() throws SQLException {
+        peopleService.callTestProcedure();
     }
 
     @GetMapping("cursos")

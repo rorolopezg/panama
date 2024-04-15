@@ -1,5 +1,6 @@
 package tech.kopernicus.data.specification.example.dataspecexample.services.people;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,4 +26,8 @@ public class PeopleServiceImpl {
         return invoker.getPeople();
     }
 
+    public void callTestProcedure() throws SQLException {
+        invoker.callTestProcedure3();
+    }
+    
 }
