@@ -115,6 +115,8 @@ public class ProcedureInvoker {
         }
     } 
 
+    /*
+
     public void callTestProcedure4() throws SQLException {
         OracleConnection conn = DataSourceUtils.getConnection(dataSource).unwrap(OracleConnection.class);
         CallableStatement cstmt = null;
@@ -149,5 +151,6 @@ public class ProcedureInvoker {
             //if (conn != null) conn.close();
         }
     } 
+     */
 
 }

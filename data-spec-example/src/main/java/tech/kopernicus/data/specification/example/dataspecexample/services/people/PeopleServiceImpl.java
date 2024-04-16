@@ -37,7 +37,7 @@ public class PeopleServiceImpl {
 
     @Transactional(readOnly = true)
     public void callTestProcedure() throws SQLException {
-        invoker.callTestProcedure4();
+        invoker.callTestProcedure3();
     }
 
 
