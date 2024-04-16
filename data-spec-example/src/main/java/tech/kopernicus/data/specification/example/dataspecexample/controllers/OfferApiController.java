@@ -23,6 +23,7 @@ import lombok.RequiredArgsConstructor;
 import tech.kopernicus.data.specification.example.dataspecexample.model.dto.OfferRequestBody;
 import tech.kopernicus.data.specification.example.dataspecexample.model.dto.OfferResponseBody;
 import tech.kopernicus.data.specification.example.dataspecexample.model.entities.cursos.Curso;
+import tech.kopernicus.data.specification.example.dataspecexample.model.entities.oracle.CustSiseRamo;
 import tech.kopernicus.data.specification.example.dataspecexample.model.entities.oracle.People;
 import tech.kopernicus.data.specification.example.dataspecexample.model.entities.phones.Phone;
 import tech.kopernicus.data.specification.example.dataspecexample.services.cursos.CursosService;
@@ -71,6 +72,16 @@ public class OfferApiController {
     @GetMapping("people3")
     public void getPeoplez3() throws SQLException {
         peopleService.callTestProcedure();
+    }
+
+    @GetMapping("people4")
+    public List<People> getPeople4() throws SQLException {
+        return peopleService.findByProcedure("uno");
+    }
+
+    @GetMapping("ramos")
+    public List<CustSiseRamo> getRamos(Integer ramo) throws SQLException {
+        return peopleService.getRamos(ramo);
     }
 
     @GetMapping("cursos")
