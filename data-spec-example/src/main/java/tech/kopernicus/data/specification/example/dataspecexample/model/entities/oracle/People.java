@@ -2,7 +2,6 @@ package tech.kopernicus.data.specification.example.dataspecexample.model.entitie
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Array;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

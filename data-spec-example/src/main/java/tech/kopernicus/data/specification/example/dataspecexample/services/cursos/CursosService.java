@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.Query;
 import tech.kopernicus.data.specification.example.dataspecexample.model.entities.cursos.Curso;
 import tech.kopernicus.data.specification.example.dataspecexample.repositories.cursos.JpaCursosRepository;
 
@@ -21,7 +20,7 @@ public class CursosService {
     private EntityManager entityManager;
     
     public List<Curso> findAll() {
-        Query query = entityManager.createQuery("select c from Curso c");
+        //Query query = entityManager.createQuery("select c from Curso c");
         return repository.findAll();
         //return (List<Curso>)query.getResultList();
     }

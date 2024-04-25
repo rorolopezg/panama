@@ -3,8 +3,6 @@ package tech.kopernicus.data.specification.example.dataspecexample.services.phon
 import java.lang.reflect.Field;
 import java.util.List;
 
-import javax.swing.text.html.parser.Entity;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.jpa.domain.Specification;
